@@ -1,0 +1,10 @@
+{
+    "empires": {
+        "s": "The_Wrathful The_People's The_Immortal The_Evil The God's",
+        "m": "Steadfast Righteous Industrial Holy Glorious Democratic Bold",
+        "A": "Yellow White Western Victory Upward Unified True Steel Southern Social Silver Scarlet Royal Republican Red Purple Progressive Popular Orange Northern National Linear Liberty Liberal Iron Homeland Grey Green Gold Freedom Federal Emerald Eastern Cyan Crimson Conservative Bronze Blue Black Austere Ascendant Amber",
+        "e": "Alliance Association Band Circle Clan Combine Company Cooperative Corporation Enterprises Faction Group Megacorp Multistellar Organization Outfit Pact Partnership Ring Society Sodality Syndicate Union Unity Zaibatsu",
+        "rules": "_%40$s$m$A$e $s$m$e$e"
+    }
+}
+

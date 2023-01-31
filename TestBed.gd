@@ -5,9 +5,15 @@ extends Node2D
 # var a = 2
 # var b = "text"
 
+func snap():
+	var file = File.new()
+	file.open("res://assets/data/names/corporations.json", File.READ)
+	var data = parse_json(file.get_as_text())
+	return data
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	var temp_nugget = snap()
 	print(RNGTools.randi_range(-10,10));
 	var bag := RNGTools.WeightedBag.new()
 	bag.weights = {
@@ -25,6 +31,10 @@ func _ready():
 		shuffle_stuff(s,m,A,e)
 
 	print(RNGTools.pick_weighted(bag))
+	print(temp_nugget.s)
+	# Now next step is to load and parse the rules, and see 
+	# About programatically calling said rules like temp.e,temp.s, etc. neg
+
 
 
 func shuffle_stuff(s,m,A,e):

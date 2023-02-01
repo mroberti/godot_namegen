@@ -21,12 +21,8 @@ func _ready():
 		B = 1,
 		C = 3
 	}
+	print(RNGTools.pick_weighted(bag))
 	print(temp_nugget["A"][0])
-	var s = ["The Wrathful","The People's","The Immortal","The Evil","God's"]
-	var m = ["Steadfast","Righteous","Industrial","Holy","Glorious","Democratic","Bold"]
-	var A =["Yellow","White","Western","Victory","Upward","Unified","True","Steel","Southern","Social","Silver","Scarlet","Royal","Republican","Red","Purple","Progressive","Popular","Orange","Northern","National","Linear","Liberty","Liberal","Iron","Homeland","Grey","Green","Gold","Freedom","Federal","Emerald","Eastern","Cyan","Crimson","Conservative","Bronze","Blue","Black","Austere","Ascendant","Amber"]
-	var e = ["Alliance","Association","Band","Circle","Clan","Combine","Company","Cooperative","Corporation","Enterprises","Faction","Group","Megacorp","Multistellar","Organization","Outfit","Pact","Partnership","Ring","Society","Sodality","Syndicate","Union","Unity","Zaibatsu"]
-	# "rules": "_%40$s$m$A$e $s$m$e$e"
 	randomize()
 
 

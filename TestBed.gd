@@ -7,7 +7,7 @@ extends Node2D
 
 func snap():
 	var file = File.new()
-	file.open("res://assets/data/names/corporations.json", File.READ)
+	file.open("res://assets/data/names/infernal 3.json", File.READ)
 	var data = parse_json(file.get_as_text())
 	return data
 
@@ -21,26 +21,30 @@ func _ready():
 		B = 1,
 		C = 3
 	}
-	var s = ["The_Wrathful","The_People's","The_Immortal","The_Evil","The God's"]
+	print(temp_nugget["A"][0])
+	var s = ["The Wrathful","The People's","The Immortal","The Evil","God's"]
 	var m = ["Steadfast","Righteous","Industrial","Holy","Glorious","Democratic","Bold"]
 	var A =["Yellow","White","Western","Victory","Upward","Unified","True","Steel","Southern","Social","Silver","Scarlet","Royal","Republican","Red","Purple","Progressive","Popular","Orange","Northern","National","Linear","Liberty","Liberal","Iron","Homeland","Grey","Green","Gold","Freedom","Federal","Emerald","Eastern","Cyan","Crimson","Conservative","Bronze","Blue","Black","Austere","Ascendant","Amber"]
 	var e = ["Alliance","Association","Band","Circle","Clan","Combine","Company","Cooperative","Corporation","Enterprises","Faction","Group","Megacorp","Multistellar","Organization","Outfit","Pact","Partnership","Ring","Society","Sodality","Syndicate","Union","Unity","Zaibatsu"]
 	# "rules": "_%40$s$m$A$e $s$m$e$e"
 	randomize()
-	for n in 8:
-		shuffle_stuff(s,m,A,e)
 
-	print(RNGTools.pick_weighted(bag))
-	print(temp_nugget.s)
+
+	# print(RNGTools.pick_weighted(bag))
+	# print(temp_nugget.rules)
+	temp_nugget.rules = temp_nugget.rules.replace("$", "")
+	temp_nugget.rules = temp_nugget.rules.replace("_", "")
+	var the_rule = temp_nugget.rules.split(",")
+	for n in 18:
+		shuffle_stuff(the_rule[0],temp_nugget)
 	# Now next step is to load and parse the rules, and see 
 	# About programatically calling said rules like temp.e,temp.s, etc. neg
 
-
-
-func shuffle_stuff(s,m,A,e):
-	s.shuffle()
-	m.shuffle()
-	A.shuffle()
-	e.shuffle()
-	print(s[0]+" "+m[0]+" "+A[0]+" "+e[0])
-	print(s[0]+" "+m[0]+" "+e[0])
+func shuffle_stuff(the_rule,temp_nugget):
+	var result = ""
+	for digit in the_rule:
+		# print(digit)
+		var splat := temp_nugget[str(digit)].split(",") as Array
+		splat.shuffle()
+		result = result + splat[0]
+	print(result)

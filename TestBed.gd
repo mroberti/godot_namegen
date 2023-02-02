@@ -32,16 +32,12 @@ func shuffle_stuff(temp_nugget):
 	var the_rules = temp_nugget.rules.split(" ")
 
 	for key in the_rules[0]:
-		var name_part := temp_nugget[str(key)].split(" ") as Array
-		result = result + RNGTools.pick(name_part)
-	
-	var regex = RegEx.new()
-	print(the_rules[1])
-	regex.compile("d(?<digit>[0-9]+)|%(?<digit>[0-9a-f]+)")
-	var result2 = regex.search(the_rules[1])
-	if result2:
-		print(result2.get_string("digit")) # Would print 2f
-	
+		print("key "+key)
+		if key.is_valid_integer():
+			print("We have a number")
+		else:
+			var name_part := temp_nugget[str(key)].split(" ") as Array
+			result = result + RNGTools.pick(name_part)
 
 	print(result)
 

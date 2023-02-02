@@ -1,2 +1,2 @@
-# godot_namegen
+# godotnamegen
 Using RNG Tools to remake Lua NameGen

@@ -7,7 +7,7 @@ extends Node2D
 
 func snap():
 	var file = File.new()
-	file.open("res://assets/data/names/infernal 3.json", File.READ)
+	file.open("res://assets/data/names/creatures.json", File.READ)
 	var data = parse_json(file.get_as_text())
 	return data
 
@@ -19,28 +19,31 @@ func _ready():
 	bag.weights = {
 		A = 1,
 		B = 1,
-		C = 3
+		C = 3,
 	}
 	print(RNGTools.pick_weighted(bag))
-	print(temp_nugget["A"][0])
-	randomize()
+	var species = "aasimar female"
 
+	# for n in 18:
+	shuffle_stuff(temp_nugget[str(species)])
 
-	# print(RNGTools.pick_weighted(bag))
-	# print(temp_nugget.rules)
-	temp_nugget.rules = temp_nugget.rules.replace("$", "")
-	temp_nugget.rules = temp_nugget.rules.replace("_", "")
-	var the_rule = temp_nugget.rules.split(",")
-	for n in 18:
-		shuffle_stuff(the_rule[0],temp_nugget)
-	# Now next step is to load and parse the rules, and see 
-	# About programatically calling said rules like temp.e,temp.s, etc. neg
-
-func shuffle_stuff(the_rule,temp_nugget):
+func shuffle_stuff(temp_nugget):
 	var result = ""
-	for digit in the_rule:
-		# print(digit)
-		var splat := temp_nugget[str(digit)].split(",") as Array
-		splat.shuffle()
-		result = result + splat[0]
+	var the_rules = temp_nugget.rules.split(" ")
+
+	for key in the_rules[0]:
+		var name_part := temp_nugget[str(key)].split(" ") as Array
+		result = result + RNGTools.pick(name_part)
+	
+	var regex = RegEx.new()
+	print(the_rules[1])
+	regex.compile("d(?<digit>[0-9]+)|%(?<digit>[0-9a-f]+)")
+	var result2 = regex.search(the_rules[1])
+	if result2:
+		print(result2.get_string("digit")) # Would print 2f
+	
+
 	print(result)
+
+func percent(passed_percentile):
+	pass;

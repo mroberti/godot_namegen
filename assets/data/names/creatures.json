@@ -4,20 +4,20 @@
 	  "B": "adan asan jasan palant sarnat valmar adrast asarn jasarm palor solar valnar alant astar javral raman talan valnor amad atar kalad ranal talar valon aman atlan kalar ranar talas valor amar avar kalas rasan talon vanar amars avlant kalast ravan taran varal amart avral kasal samar taval varam ansam jalan katarn saran valant varan arad jalkar kaval sarat valar varat aram jaran klaron sardan valdor vardar aran jasal palad sardar valkar voltar",
 	  "P": "Ar Sar Tar Var Jal Kal Pal Ral Tal",
 	  "p": "el en er es et eth eth eth enth eleth ereth eseth",
-	  "C": "Ar Da Drin Ime Ma Ni Ni On Rhi Val,",
+	  "C": "Ar Da Drin Ime Ma Ni Ni On Rhi Val",
 	  "D": "ken sinoe vina ma sah sozi jena ramou drea alla tyra",
 	  "E": "Arken,Arsinoe,Davina,Drinma,Imesah,Masozi,Nijena,Niramour,Ondrea,Rhialla,Valtyra",
-	  "rules": "Ap %10P-B %50 CD %50 PD %50Cp %25E"
+	  "rules": "$A$p, %10$P-$B, %50$C$D, %50$P$D, %50$C$p, %25$E"
 	},
 	"aasimar male": {
 	  "A": "Adan Adrast Alant Amad Aman Amar Amars Amart Ansam Arad Aram Aran Asan Asarn Astar Atar Atlan Avar Avlant Avral Jalan Jalkar Jaran Jasal Jasan Jasarm Javral Kalad Kalar Kalas Kalast Kasal Katarn Kaval Klaron Palad Palant Palor Raman Ranal Ranar Rasan Ravan Samar Saran Sarat Sardan Sardar Sarnat Solar Talan Talar Talas Talon Taran Taval Valant Valar Valdor Valkar Valmar Valnar Valnor Valon Valor Vanar Varal Varam Varan Varat Vardar Voltar",
 	  "B": "adan adrast alant amad aman amar amars amart ansam arad aram aran asan asarn astar atar atlan avar avlant avral jalan jalkar jaran jasal jasan jasarm javral kalad kalar kalas kalast kasal katarn kaval klaron palad palant palor raman ranal ranar rasan ravan samar saran sarat sardan sardar sarnat solar talan talar talas talon taran taval valant valar valdor valkar valmar valnar valnor valon valor vanar varal varam varan varat vardar voltar",
 	  "P": "Ar Sar Tar Var Jal Kal Pal Ral Tal",
 	  "p": "al an ar as at ath ath ath anth athal athar athas",
-	  "C": "Ar Bel Cer Cron E Il Mau O Pa Tu Zai,",
+	  "C": "Ar Bel Cer Cron E Il Mau O Pa Tu Zai",
 	  "D": "itian tin nan wier ran amin dril krin rant ral gan",
 	  "E": "Aritian Beltin Cernan Cronwier Eran Ilamin Maudril Okrin Parant Tural Wyran Zaigan",
-	  "rules": "Ap %10P-B %50 CD %50 PD %50Cp %25E"
+	  "rules": "Ap %10P-B %50CD %50PD %50Cp %25E"
 	},
 	"apes": {
 	  "A": "bah beh boh bou buhn dah deh dih dou duhm eehm engah fou gah goh gohm guhn gwah hahn hou hwah huh jou juh kah keh keng kihm koh kong kreeh lah leh mah moh mohm muh nah nang neh nih noh nou nyoh ogh ououh roh sah sahm soh tah tahm toh ugh ungoh wah wuhn yah yoh zeh zih"
@@ -78,14 +78,14 @@
 	  "B": "ci lel mar myr ne nel nil no nyl rel rha ru sab sin sul sus tel tul ver vil vir vril yas olg on or org oth pan pel por sek sol sun ten thal tor torm um va vek vol vor yel yol ys",
 	  "C": "bra dyl el en er h id il is lav len lev lin liv lun pel pir r ra ral ril rin sin syl",
 	  "D": "an bra dra deil dril ene hel ia il iln ira istra ith is iza lin lya na niss ra rin sil th tra via vra vril",
-	  "rules": "A80B2 0CD A80B2 0CD"
+	  "rules": "A80B20CD A80B20CD"
 	},
 	"drow male": {
 	  "A": "Ar Bal Ber Bur Char Chor Col De Div Dol Dor Dri Dro Drom Dul Dur Eil Ek En Er Fi Gon Gul Im Ins Ist Jeg Jend Jer Jys Ka Kil Lil Lul Mab Mar Maz Mer Mez Mi Mir Mol Mor Nor Noth Ol Phar Sy Z",
 	  "B": "ca el myr ne nel nil no nox nyl rel rha ru ry sab sin sul sus tel tul ver vic vil vir vril yas olg on or ov org oth pan pel por ren ry sek sol sun ten thal tor torm vek vol vor yel yol zt",
 	  "C": "dyl di el en er id il is lav len lev lin liv mo pel pir ra ral ril rin sin syl",
 	  "D": "ald eld er id in ild ird lim naz nid nil nim red rid rim riv ul uld urn vid vim vir viz",
-	  "rules": "A80B2 0CD A80B2 0CD"
+	  "rules": "A80B20CD A80B20CD"
 	},
 	"dwarf female": {
 	  "s": "A Al An Ar Ba Ban Bi Bo Bom Co Da Dan Dar De Di Do Du Due Duer Dwa Fa Fal Fari Fe Feri Fi Fre Fri Fu Fun Ga Gar Gim Glo Go Gom Gro Gwar He Ib In Ja Jor Ka Ki Kil Li Lo Ma Me Mi Mar Na Nal O Ras Re Rel Ren Ri Ro Sen Si Ta Tar Tel Thi Tho Thon Thra Tor Ve Von We Wer Yen Yur Za", 

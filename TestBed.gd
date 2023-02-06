@@ -20,7 +20,7 @@ func _ready():
 	}
 	# "rules": "Ap %10P-B %50CD %50PD %50Cp %25E"
 	print(RNGTools.pick_weighted(bag))
-	var species = "tengu female"
+	var species = "human surname"
 
 
 	for n in 18:
@@ -36,7 +36,7 @@ func shuffle_stuff(temp_nugget):
 	# if roll succeeds, use that rule, otherwise, roll again
 	randomize()
 	while [true]:
-		rule = the_rules[0] # RNGTools.pick(the_rules)
+		rule = RNGTools.pick(the_rules)
 		if(rule[0]=="$"):
 			# Erase the $ if it's the first char, otherwise splitting string into array won't work. 
 			rule.erase(0, 1)
@@ -64,9 +64,15 @@ func shuffle_stuff(temp_nugget):
 			if(percent(int(mytestnumber))):
 				var the_array := temp_nugget[str(name_part)].split(" ") as Array
 				result = result + RNGTools.pick(the_array)
-		elif key=="-":
-			result = result + "-"
 		else:
+			var suffix = ""
+			print("key "+key)
+			if(key.length()>1):
+				print("key[1] "+key[1])
+				var temp := key.split(str(key[0])) as Array
+				print("Array "+temp[1])
+				result = result + (RNGTools.pick(key[0]) + temp[1])
+				# ^^ Add a dash to the end of the word
 			var name_part := temp_nugget[str(key)].split(" ") as Array
 			result = result + RNGTools.pick(name_part)
 

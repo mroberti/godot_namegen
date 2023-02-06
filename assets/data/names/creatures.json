@@ -345,7 +345,8 @@
 	  "rules": "$A$v$c$B, $A$c$v$B, %25$A-$v$c$B, %25$A-$c$v$B"
 	},
 	"insects": {
-	  "A": "chirr chirrk hrikk kikeek kirrik kizz kree kreex krekk krich kutch kzirr rikik rritz rrizzch shikirr skeetz skirr skisk skrak skrix skut strid strix tchik thrih thrix tzirch tzuk tzurr"
+	  "A": "chirr chirrk hrikk kikeek kirrik kizz kree kreex krekk krich kutch kzirr rikik rritz rrizzch shikirr skeetz skirr skisk skrak skrix skut strid strix tchik thrih thrix tzirch tzuk tzurr",
+	  "rules":"$A %50$A$A %10$A$A$A"
 	},
 	"kobold female": {
 	  "s": "A Aa Ad As Az De E Es Fi Ga Gal Gar Gur Har I Id Li Lul Ma Mis Mo Mod Ne No Nos O Par Po Ra Ri Rol Sa Sad Siz Sok Tar Tol U Va Vas Vis Vo Za Zi",

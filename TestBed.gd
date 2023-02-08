@@ -23,7 +23,7 @@ func _ready():
 	var species = "human surname"
 
 
-	for n in 18:
+	for n in 50:
 		shuffle_stuff(temp_nugget[str(species)])
 
 func shuffle_stuff(temp_nugget):
@@ -54,8 +54,8 @@ func shuffle_stuff(temp_nugget):
 				break
 
 	# rule = rule.replace ( "$", "" )
+
 	var key1 := rule.split("$") as Array
-	# $s$10v$10c$10m$e
 	for key in key1:
 		if key[0].is_valid_integer():
 			# Quantity = int(Quantity)
@@ -66,16 +66,19 @@ func shuffle_stuff(temp_nugget):
 				result = result + RNGTools.pick(the_array)
 		else:
 			var suffix = ""
-			print("key "+key)
+			# print("key "+key)
 			if(key.length()>1):
-				print("key[1] "+key[1])
+				# print("key[0] "+key[0])
+				var name_part := temp_nugget[str(key[0])].split(" ") as Array
+				# print("key[1] "+key[1])
 				var temp := key.split(str(key[0])) as Array
-				print("Array "+temp[1])
-				result = result + (RNGTools.pick(key[0]) + temp[1])
+				# print("Array "+temp[1])
+				result = result + (RNGTools.pick(name_part) + temp[1])
 				# ^^ Add a dash to the end of the word
-			var name_part := temp_nugget[str(key)].split(" ") as Array
-			result = result + RNGTools.pick(name_part)
-
+			else:
+				var name_part := temp_nugget[str(key[0])].split(" ") as Array
+				result = result + RNGTools.pick(name_part)
+	result = result.replace ( "_", " " )
 	print(result)
 
 func percent(passed_percentile):

@@ -505,10 +505,16 @@
 	},
 	"toads": {
 	  "A": "boag bolg brolg gaarlb goag goalb golg goln graal roalb roalg rolg rolv slaag slaan slaar slaav sloag slorg slorv soag vaarg vlaar vlaaz voag volg vraag vraal vrog vrol",
-	  "rules":"$A %50$A$A %10$A$A$A"
+	  "rules":"$A, %50$A$A, %10$A$A$A"
 	} ,
 	"turtles": {
 	  "A": "haash heem ihxaan inixh kahxtu kam kiul mahz mierz mursh reehm scux shai shar sheel siul skeen slaxas strai suliz sxur taish tur tzenx tzesh tzuhan tzur xeem xhan xurelz",
-	  "rules":"$A %50$A$A %10$A$A$A"
-	}
+	  "rules":"$A, %50$A$A, %10$A$A$A"
+	},
+	"corporations":{
+		"s":"_Applied _Best _Synthetic _Industrial _Futura _Destiny _Wellness _Military _Defense", 
+		"m":"_Electronics _Genomics _Genetics _Nanotech _Robotics _Cognitive _Neural _Infinity _Psi",
+		"e":"_Corporation _Compact _Conglomerate _Company _Incorporated _Synthetics _Synthetica _Genoma _Technica _Armor _Arms _Weapons" ,
+		"rules":"$s$m, %10$s$s$e"
+	 }
   }

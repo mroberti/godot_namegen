@@ -1,6 +1,6 @@
 {
-   "s":"Applied,Best,Synthetic,Industrial,Futura,Destiny,Wellness,Military,Defense",
-   "m":"Electronics,Genomics,Genetics,Nanotech,Robotics,Cognitive,Neural,Infinity,Psi",
-   "e":"Corporation,Compact,Conglomerate,Company,Incorporated,Synthetics,Synthetica,Genoma,Technica,Armor,Arms,Weapons",
-   "rules":"sm,%10sse"
+   "s":"_Applied_ _Best_ _Synthetic_ _Industrial_ _Futura_ _Destiny_ _Wellness_ _Military_ _Defense_", 
+   "m":"_Electronics_ _Genomics_ _Genetics_ _Nanotech_ _Robotics_ _Cognitive_ _Neural_ _Infinity_ _Psi_",
+   "e":"_Corporation_ _Compact_ _Conglomerate_ _Company_ _Incorporated_ _Synthetics_ _Synthetica_ _Genoma_ _Technica_ _Armor_ _Arms_ _Weapons_" ,
+   "rules":"$s$m %10sse"
 }

@@ -20,8 +20,7 @@ func _ready():
 	}
 	# "rules": "Ap %10P-B %50CD %50PD %50Cp %25E"
 	print(RNGTools.pick_weighted(bag))
-	var species = "human surname"
-
+	var species = "corporations"
 
 	for n in 50:
 		shuffle_stuff(temp_nugget[str(species)])

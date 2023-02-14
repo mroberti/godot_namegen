@@ -86,3 +86,7 @@ func percent(passed_percentile):
 	if(roll <= passed_percentile):
 		result = true
 	return result
+
+func testingSnippets():
+	for i in 10:
+		print(i)

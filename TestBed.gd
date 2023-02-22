@@ -1,16 +1,16 @@
 extends Node2D
 # https://github.com/LukeMS/lua-namegen/blob/master/data/creatures.cfg
 
-func snap():
+func load_json(filename):
 	var file = File.new()
-	file.open("res://assets/data/names/creatures.json", File.READ)
+	file.open(filename, File.READ)
 	var data = parse_json(file.get_as_text())
 	return data
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	var temp_nugget = snap()
+	var temp_nugget = load_json("res://assets/data/names/creatures.json")
 	print(RNGTools.randi_range(-10,10));
 	var bag := RNGTools.WeightedBag.new()
 	bag.weights = {

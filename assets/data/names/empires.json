@@ -1,7 +1,7 @@
 {
-   "s":"The ,The People's ,God's ,The Wrathful ,The Evil ,The Immortal ",
-   "m":"Democratic ,Holy ,Industrial ,Bold ,Steadfast ,Righteous ,Glorious ,Shining ",
-   "A":"Freedom ,Austere ,True ,Linear ,National ,Unified ,Democratic ,Royal ,Social ,Progressive ,Popular ,Republican ,Federal ,Liberty ,Homeland ,Conservative ,Liberal ,Victory ,Black ,White ,Red ,Green ,Blue ,Yellow ,Scarlet ,Emerald ,Cyan ,Amber ,Purple ,Crimson ,Grey ,Orange ,Bronze ,Silver ,Gold ,Steel ,Iron ,Northern ,Southern ,Western ,Eastern ,Ascendant ,Upward ",
-   "e":"Alliance ,Clan ,Combine ,Group ,Pact ,Society ,Sodality ,Union ,Unity ,Legion ,Empire ",
-   "rules":"60sm20Ae,60sm20Ae"
+   "s":"_The_ _The People's_ _God's_ _The Wrathful_ _The Evil_ _The Immortal ",
+   "m":"Democratic_ _Holy_ _Industrial_ _Bold_ _Steadfast_ _Righteous_ _Glorious_ _Shining ",
+   "A":"_Freedom_ _Austere_ _True_ _Linear_ _National_ _Unified_ _Democratic_ _Royal_ _Social_ _Progressive_ _Popular_ _Republican_ _Federal_ _Liberty_ _Homeland_ _Conservative_ _Liberal_ _Victory_ _Black_ _White_ _Red_ _Green_ _Blue_ _Yellow_ _Scarlet_ _Emerald_ _Cyan_ _Amber_ _Purple_ _Crimson_ _Grey_ _Orange_ _Bronze_ _Silver_ _Gold_ _Steel_ _Iron_ _Northern_ _Southern_ _Western_ _Eastern_ _Ascendant_ _Upward ",
+   "e":"_Alliance_ _Clan_ _Combine_ _Group_ _Pact_ _Society_ _Sodality_ _Union_ _Unity_ _Legion_ _Empire ",
+   "rules":"%60$s$m20$A$e"
 }

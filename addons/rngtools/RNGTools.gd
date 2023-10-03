@@ -39,18 +39,19 @@ static func randi_range(from: int, to: int, rng=null) -> int:
 static func shuffle(array: Array, rng=null):
 	var size := array.size()
 	for i in range(size - 1):
-		var swap = randi_range(i, size, rng)
+		var swap = randi_range(i, size)
 		var tmp = array[i]
 		array[i] = array[swap]
 		array[swap] = tmp
 
 
 # Returns one element of the array at random, or null if the array is empty.
-static func pick(array: Array, rng=null):
-	if array.empty():
+static func pick(array: Array):
+	if array.is_empty():
 		return null
 	else:
-		return array[randi_range(0, array.size(), rng)]
+		#print("Array size: "+str(array.size()))
+		return array[randi_range(0, array.size()-1)]
 
 
 # Picks n elements of the array at random, or the entire array if its length
@@ -70,7 +71,7 @@ static func pick_many(array: Array, n: int, rng=null) -> Array:
 # Picks one element of the bag at random, according to the weights specified
 # in the WeightedBag.
 static func pick_weighted(bag: WeightedBag, rng=null):
-	if bag.weights.empty():
+	if bag.weights.is_empty():
 		return null
 
 	var n := bag._keys.size()
@@ -89,16 +90,16 @@ class WeightedBag:
 	# See https://en.wikipedia.org/wiki/Alias_method
 
 	# A map of keys to their weights.
-	var weights := {} setget set_weights
+	var weights := {}: set = set_weights
 
 	# Sum of weights
 	var _sum := 0
 	# Probability table
-	var _u: PoolIntArray
+	var _u: PackedInt32Array
 	# Alias table
-	var _k: PoolIntArray
+	var _k: PackedInt32Array
 	# Original probabilities
-	var _p: PoolIntArray
+	var _p: PackedInt32Array
 	# Map of indices to the original keys we were given
 	var _keys := []
 
@@ -113,11 +114,11 @@ class WeightedBag:
 
 		_sum = 0
 
-		_u = PoolIntArray()
+		_u = PackedInt32Array()
 		_u.resize(n)
-		_k = PoolIntArray()
+		_k = PackedInt32Array()
 		_k.resize(n)
-		_p = PoolIntArray()
+		_p = PackedInt32Array()
 		_p.resize(n)
 
 		_keys = weights.keys()
@@ -139,7 +140,7 @@ class WeightedBag:
 				underfull.push_back(i)
 
 		# Distribute aliases
-		while not overfull.empty():
+		while not overfull.is_empty():
 			var i: int = overfull.pop_back()
 			var j: int = underfull.pop_back()
 

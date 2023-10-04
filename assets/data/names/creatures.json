@@ -515,6 +515,6 @@
 		"s":"_Applied _Best _Synthetic _Industrial _Futura _Destiny _Wellness _Military _Defense", 
 		"m":"_Electronics _Genomics _Genetics _Nanotech _Robotics _Cognitive _Neural _Infinity _Psi",
 		"e":"_Corporation _Compact _Conglomerate _Company _Incorporated _Synthetics _Synthetica _Genoma _Technica _Armor _Arms _Weapons" ,
-		"rules":"$s$m, %10$s$s$e"
+		"rules":"%10$s$s$e, $s$m"
 	 }
   }

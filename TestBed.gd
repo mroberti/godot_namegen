@@ -7,9 +7,14 @@ func load_json(filename):
 	var data = JSON.parse_string(json_as_text)
 	return data
 
+func sort_ascending(a, b):
+	if a[0] < b[0]:
+		return true
+	return false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
+
 	var temp_nugget = load_json("res://assets/data/names/creatures.json")
 	print(RNGTools.randi_range(-10,10));
 	var bag := RNGTools.WeightedBag.new()
@@ -30,31 +35,34 @@ func shuffle_stuff(temp_nugget):
 	var result = ""
 	var the_rules := temp_nugget.rules.split(", ") as Array
 	var rule = ""
+	print(temp_nugget)
 	print(the_rules)
 	# "$A$p, %10$P-$B, %50$C$D, %50$P$D, %50$C$p, %25$E"
 	# Choose a rule randomly
 	# If there's a percentage at the front, roll against it
 	# if roll succeeds, use that rule, otherwise, roll again
 	randomize()
+	the_rules = ["$A$p", "%10$P-$B", "%50$C$D", "%50$P$D", "$50$C$p", "%25$E"]
+	the_rules.sort()
+	print(the_rules) # Prints [[4, Tomato], [5, Potato], [9, Rice]].
 	while [true]:
 		rule = RNGTools.pick(the_rules)
 		print("First char:"+rule[0])
+		print("Rule:"+rule)
 		if(rule[0]=="$"):
 			# Erase the $ if it's the first char, otherwise splitting string into array won't work. 
 			rule.erase(0, 1)
-			print("Rule:"+rule)
 			break
-		# elif(rule[1]=="%"):
-		# 	print(rule[1])
-		# 	var name_chunks := rule.split("$") as Array
-		# 	# Erase the $ if it's the first char, otherwise splitting string into array won't work. 
-		# 	name_chunks[0].erase(0, 1)
-		# 	print("Rule:"+rule)
-		# 	if(percent(int(name_chunks[0]))):
-		# 		rule.erase(0, rule.find ( "$", 1 ))
-		# 		rule.erase(0, 1)
-		# 		# print("Rule:"+rule)
-		# 		break
+		elif(rule[0]=="%"):
+			print(rule[0])
+			var name_chunks := rule.split("$") as Array
+			# Erase the $ if it's the first char, otherwise splitting string into array won't work. 
+			name_chunks[0].erase(0, 1)
+			if(percent(int(name_chunks[0]))):
+				rule.erase(0, rule.find ( "$", 1 ))
+				rule.erase(0, 1)
+				# print("Rule:"+rule)
+				break
 
 	# rule = rule.replace ( "$", "" )
 

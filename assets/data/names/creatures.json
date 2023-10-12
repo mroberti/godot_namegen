@@ -7,7 +7,7 @@
 	  "C": "Ar Da Drin Ime Ma Ni Ni On Rhi Val",
 	  "D": "ken sinoe vina ma sah sozi jena ramou drea alla tyra",
 	  "E": "Arken,Arsinoe,Davina,Drinma,Imesah,Masozi,Nijena,Niramour,Ondrea,Rhialla,Valtyra",
-	  "rules": "$A$p, %10$P-$B, %50$C$D, %50$P$D, %50$C$p, %25$E"
+	  "rules": "$A$p %10$P-$B %50$C$D %50$P$D %50$C$p %25$E"
 	},
 	"aasimar male": {
 	  "A": "Adan Adrast Alant Amad Aman Amar Amars Amart Ansam Arad Aram Aran Asan Asarn Astar Atar Atlan Avar Avlant Avral Jalan Jalkar Jaran Jasal Jasan Jasarm Javral Kalad Kalar Kalas Kalast Kasal Katarn Kaval Klaron Palad Palant Palor Raman Ranal Ranar Rasan Ravan Samar Saran Sarat Sardan Sardar Sarnat Solar Talan Talar Talas Talon Taran Taval Valant Valar Valdor Valkar Valmar Valnar Valnor Valon Valor Vanar Varal Varam Varan Varat Vardar Voltar",
@@ -17,7 +17,7 @@
 	  "C": "Ar Bel Cer Cron E Il Mau O Pa Tu Zai",
 	  "D": "itian tin nan wier ran amin dril krin rant ral gan",
 	  "E": "Aritian Beltin Cernan Cronwier Eran Ilamin Maudril Okrin Parant Tural Wyran Zaigan",
-	  "rules": "$A$p, %10$P-$B, %50$C$D, %50$P$D, %50$C$p, %25$E"
+	  "rules": "$A$p %10$P-$B %50$C$D %50$P$D %50$C$p %25$E"
 	},
 	"apes": {
 	  "A": "bah beh boh bou buhn dah deh dih dou duhm eehm engah fou gah goh gohm guhn gwah hahn hou hwah huh jou juh kah keh keng kihm koh kong kreeh lah leh mah moh mohm muh nah nang neh nih noh nou nyoh ogh ououh roh sah sahm soh tah tahm toh ugh ungoh wah wuhn yah yoh zeh zih",
@@ -53,13 +53,13 @@
 	  "B": "niri lele lyau mau mew miah miau mihr mirr miu purrh saf sash serr sfee shah sharr shau shee sheer shim shurr siyth slif swish syau",
 	  "C": "lin lyan lyar lah lirr liss lith meer y yer",
 	  "v": "a e i",
-	  "rules": "$P$B, $P$C$v, $A$B, $A$C$v"
+	  "rules": "$P$B $P$C$v $A$B $A$C$v"
 	},
 	"catfolk male": {
 	  "P": "Car Dre Fer Ger Nyk Rou Zith",
 	  "A": "Lirr Liss Lith Lyau Mau Meer Mew Miah Miau Mihr Mirr Miu Purrh Saf Sash Serr Sfee Shah Sharr Shau Shee Sheer Shim Shurr Siyth Slif Swish Syau",
 	  "p": "ruth wan us ran tan gar embe lirr liss lith lyau mau meer mew miah miau mihr mirr miu purrh saf sash serr sfee shah sharr shau shee sheer shim shurr siyth slif swish syau",
-	  "rules": "$P$p, $A$p"
+	  "rules": "$P$p $A$p"
 	},
 	"cats": {
 	  "A": "hrish lirr liss lith lyau mau meer mew miah miau mihr mirhl mirr miu purrh saf sash serr sfee shah sharr shau shee sheer shim shurr siyth slif swish syau",
@@ -88,20 +88,20 @@
 	  "B": "ci lel mar myr ne nel nil no nyl rel rha ru sab sin sul sus tel tul ver vil vir vril yas olg on or org oth pan pel por sek sol sun ten thal tor torm um va vek vol vor yel yol ys",
 	  "C": "bra dyl el en er h id il is lav len lev lin liv lun pel pir r ra ral ril rin sin syl",
 	  "D": "an bra dra deil dril ene hel ia il iln ira istra ith is iza lin lya na niss ra rin sil th tra via vra vril",
-	  "rules": "$A$80B$20C$D, $A$80B$20C$D"
+	  "rules": "$A$80B$20C$D $A$80B$20C$D"
 	},
 	"drow male": {
 	  "A": "Ar Bal Ber Bur Char Chor Col De Div Dol Dor Dri Dro Drom Dul Dur Eil Ek En Er Fi Gon Gul Im Ins Ist Jeg Jend Jer Jys Ka Kil Lil Lul Mab Mar Maz Mer Mez Mi Mir Mol Mor Nor Noth Ol Phar Sy Z",
 	  "B": "ca el myr ne nel nil no nox nyl rel rha ru ry sab sin sul sus tel tul ver vic vil vir vril yas olg on or ov org oth pan pel por ren ry sek sol sun ten thal tor torm vek vol vor yel yol zt",
 	  "C": "dyl di el en er id il is lav len lev lin liv mo pel pir ra ral ril rin sin syl",
 	  "D": "ald eld er id in ild ird lim naz nid nil nim red rid rim riv ul uld urn vid vim vir viz",
-	  "rules": "$A$80B$20C$D, $A$80B$20C$D"
+	  "rules": "$A$80B$20C$D $A$80B$20C$D"
 	},
 	"dwarf female": {
 	  "s": "A Al An Ar Ba Ban Bi Bo Bom Co Da Dan Dar De Di Do Du Due Duer Dwa Fa Fal Fari Fe Feri Fi Fre Fri Fu Fun Ga Gar Gim Glo Go Gom Gro Gwar He Ib In Ja Jor Ka Ki Kil Li Lo Ma Me Mi Mar Na Nal O Ras Re Rel Ren Ri Ro Sen Si Ta Tar Tel Thi Tho Thon Thra Tor Ve Von We Wer Yen Yur Za", 
 	  "e": "al ali ba bida bra ca da den deth di dy ev fra gra gret hild iess ka kala la laani li lona ma mae mala na nda nka nuda ov ra ryn si ta tala tha tu tuna vada vara via ya" ,
 	  "m": "Dapith Oleden Myanden Herev Apith Rilinda Farirav Kazda Farishan Olivia Hanavia Farika Zazda Ferili Neradal Neraryn Heshan Kelaja Narapith Seha Herav Zeshan Brarinda Tegna Henda Hananna Olina Kelanna Nagrun Narta Nerana Nala Keli Oleli Hananden Minden Oleka Kalalinda Zarav Keladen Kalalinden Marav Kedal Farida Lischa Oligrun Tegna Henden Conna Zegrun Jegna Oliden Olirvia Taja Dalinda Farigna Nararra Nanden Fepith Anka Arinda Herra Myalsi Fariha Gigmen Gliva Hlamus Thagma Glelra Dorulmion Fraflera Nivenna Nagnon Flagha Hefra Nagna Ghodreva Didfa Bhalna Sundus Merdris Firnordran Mhenufna Flosen Gladfan Selma Flenglamhann Mhindiodra Fredrotha Hralna Glelra Flagnimra Bhimdumna Stanijana Velenka Tinia Grodmila Moragny Velidrun Silenka Darizdana Levara Kadomia Dobrigny Mamira Janirigg Bohumira Mimhildr Danhildr Rosivana Granna Gumbla Boghild Dedandi Simhildr Bogna Stavana Jarka Svaritza Danitka Hirinka Melivara Staniska Velina Veruska Odrun Nevegny Bemiana Grorzanna Dobrotka Raruna Svalena Barirana Drardandi Velilica Madomira Veliritza Tulenka Brygrun Bisedandi Medda Nevedomia Mystmyl Tiznura Kaitria Bralleniss Arsael Ranselle Missora Edsyl Lesthel Runnar Lassleen Ketnas Lasryn Randelle Mislen Taznia Bronthiel Brolmora Bonsora Nassmyla Bylthiel Lyeslyl Brynglian Runryn Bellenar Einva Rynmera Gemnyl Brannys Brilleras Arrielle Bretrielle Mystri Brenniss Tizrin Mistrin Naerbera Dearwin Jinvan Kathsyl Nyswaen Lysvia Naerri Tyshwyn Bryndora Mysria Tisnan Gemdeth Mystlin" ,
-	  "rules": "$s$e, %20$m"
+	  "rules": "$s$e %20$m"
 	},
 	"dwarf female 2": {
 	  "A": "Bal Durn Na Bord From Nor Born Fror Nord Brim Fuld Orm Brod Fund Skand Brokk Gim Skond Brom Glo Storn Bru Gond Strom Bur Gord Stur Burl Gorm Sturl Da Grad Sund Dal Grim Thor Dolg Grod Thorn Dor Grom Thra Dorm Guld Thro Dral Gund Throl Drim Gur Thror Drom Hord Thru Dur Horn Thrur Durm Hra Thund",
@@ -112,7 +112,7 @@
 	  "s": "A An Ba Bi Bo Bom Bon Da Dan Dar De Do Du Due Duer Dwa Fa Fal Fi Fre Fun Ga Gal Gar Gam Gim Glo Go Gom Gro Gwar Ib Jor Ka Ki Kil Lo Mar Na Nal O Ras Ren Ro Ta Tar Tel Thi Tho Thon Thra Tor Von We Wer Yen Yur" ,
 	  "e": "bil bin bur char den dir dur fri fur in li lin mil mur ni nur ran ri ril rimm rin thur tri ulf un ur vi vil vim vin vri" ,
 	  "m": "Darerhan Sidgroick Strodreac Dwoddig Reiteam Ellatin Snaled Dwoggamri Gloridrick Thakhuid Whurgick Hotdram Hatgral Raldrous Thrazzod Nastrouck Matel Thaggat Gaggeam Fiserlun Nesdrer Strorferlun Grulgrunri Noravarlum Brursunli Ovrom Tulgeack Mugrud Nuldrous Wefrog Hoddorlug Loldrorlun Durindrolin Yugnotum Tustrid Eldrerlug Sirgud Brunulir Nesgrorlug Katrorlun Bustarlig Dhovumri Dalodgruc Novuk Fikrig Kitmuik Jadgrulir Nosdror Gokkolir Skassoc Reidil Groudgreck Tusseack Vatdrad Reikrumin Kuverlun Thimnok Samratin Nusim Grarorli Skorruil Doraraem Skostumin Borhec Glorirdrumi Thralumlir Alfozami Darethog Daloggath Krorrumri Krorhur Mangrac Groostroun Dhozolir Yongroun Brughoud Glasseac Alfoleak Wekdrotum Grumaed Dandrum Darekkurim Kuker Brutram Throkhatin Londaeth Aldrud Vordromli Brammumi Hoursumir Bornaeth Ararharlig Brammerlun Nugnolim Hethouk Vazzomi Damdig Nugnumri Braznumlin Boddorlum Figin Volso Jervil Mintek Pyrgor Denegar Dwyrand Anseck Rendal Jurkin Leron Lurin Garav Emryris Vagrin Telin Frakin Katan Worlin Nevinar Daitrak Evetin Gartekel Bukin Minus Vedel Pilanz Pionek Thagan Hirtek Bevaris Orren Bereg Banderel Bhevin Velkias Piovil Gwilin Meka Varrin Loirkel Firtag Enka Triarol Pythy Piord Fraron Luram Pyrrik Tobor Fag Nu Frord Svathes Ukksvuknau Fralmirdeokk Driend Skark Svun Graunnirm Ormaldn Ruknarand Raldn Kvug Hokig Flidga Horranderst Grendfenni Dragneknoldn Eog Gru Skarn Morgir Skitheik Driethmeigim Frundfiekreord Hveothmulmis Bleig Eirst Varn Blidgok Htuthmau Glot Dwolin Hath Hatum Geak Dareled Assorli Bolgunli Dalosgrer Nafarlun Naek Konlir Wimli Runri Weak Throkgrotir Thorgatin Hurdug Toregnotum Dhorgun Lorlun Glaec Foum Fun Glomli Toresosi Nedgroli Umirbouc Rutronlir Doufack Rag Kaed Lur Tog Throut Fibroir Jammur Tharsotum Kotdrom Khougraeck Wel Halin Deas Hug Thig Khourhum Dourborlug Utgrumi Bumrig Thardunli Brofrir Thusam Danrun Nabek Nerbur But Drait Kraide Tak Mim Brindem Krombom Mulin Molbem Krolven Dwida Throfu Thefu Broiba Kaku Drofer Gilin Damir Krifrek Krorvin Flit Frun Kroini Naid Dwoit Denir Lamak Kralbem Fulbik Lelvim Gruk Bod Nade Dail Thoiti Brilbum Flafen Nemlum Marlon Tolbek Maidu Khaime Gub Krob Frel Orvalik Zilon Zibrad Statek Danat Prodalf Bozhirban Straarce Orvamard Dozidar Madik Daborek Krasihdan Viros Milojidar Tyhumer Jarorlin Bedim Odesimir Catomir Thorin Orvan Odiros Radigo Stanirlin Bohuser Vidarr Straabrin Dalon Cahos Bogodek Dazen Bunek Gurlin Budigomil Njolek Bozhidinn Zegotin Mizydar Zegoy Dalirvan Golovan Ogniran Zeliban Kazindri Dalovan Bistan Kregumil Zizen Thozydar Grammir Kromthran Thurrik Hurmur Amgrun Bhalthrun Hjolnom Urmgurn Tharnus Brumryl Amnik Kramrim Kardur Mordir Thulnur Hjolkom Belmyr Ummun Grynyl Dulmun Hurnik Hjulkom Kramdahr Balbek Darmur Therdek Berdahr Kharrom Gulram Thermun Doldor Tykam Kargrom Thaldek Gramthrun Rottharn Karthrum Emkom Hjolmond Belmun Bendahr Daergrum Morrum Ragthran Hjulgurn Khardus Bannar Tykohm Regrigg Fardal Bhalmiir Gremryl Bharkuhm Mordrus Bramman Hargurn Hjoldek Thytharn Kramrigg Thalrim Tharduhr Thalmund Tharnur Bannom Umrig Daergrim Kramthran Darnar Fargrim Fariggs Hulmyr Bhelren Hjolgrim Daermor Therdur Bergarn Bunmund Hjalmiir Thormyl Vonmin Armkyl Adgarn Malkum Hjaldrus Hjoldram Thulrigg Bhelrom Doladin Daermond Randar Ragdrus Armrom Bromdren Griliggs Gramrik Karman Ummin Tormiir Toriggs Tordahr" ,
-	  "rules": "$s$e, %20$m"
+	  "rules": "$s$e %20$m"
 	},
 	"dwarf male 2": {
 	  "A": "Bal Durn Na Bord From Nor Born Fror Nord Brim Fuld Orm Brod Fund Skand Brokk Gim Skond Brom Glo Storn Bru Gond Strom Bur Gord Stur Burl Gorm Sturl Da Grad Sund Dal Grim Thor Dolg Grod Thorn Dor Grom Thra Dorm Guld Thro Dral Gund Throl Drim Gur Thror Drom Hord Thru Dur Horn Thrur Durm Hra Thund",
@@ -126,7 +126,7 @@
 	  "e": "bane basher -Battler -Beheader boxer burner butcher choker cleaver crusher cutter doom eater -Executioner -Fighter -Garrotter -Grappler gutter hammer kicker killer mauler masher puncher ripper slasher slayer slicer smasher -Strangler striker -Wrestler" ,
 	  "v": "Black Blood Bronze Cold Fair Fiery Fire Firm Golden Grey Hard Ice Iron Mithril Moon Noble Oak Onyx Red Silver Steel Stone Strong Thunder White" ,
 	  "c": "axe beard belly blade brand chest cheek finger fist foot hair hammer hand head heart hood mace pick pike shield spear spike sword" ,
-	  "rules":"$P$p, $s$e, $v$c"
+	  "rules":"$P$p $s$e $v$c"
 	},
 	"eels": {
 	  "A": "lool mool ooz silv slee sleem sleez sliv sliz sloov smee sneel snilv snool sool szee szoo veez vlee vliz vloo vool voolm vooz zeev zilv zliv zloo zool zoov",
@@ -143,7 +143,7 @@
 	  "D": "lith maeg mind mith nith rael rind saer sar seld ser sil silm sind thael thaer thal thel ther thir",
 	  "E": "ad al am an ar as eb ed el em en er es ev il in ir ol thal thon",
 	  "F": "edel el eth ian iel iel ien loth mir rial rian riel riel rien ril roël sil wë wen wen",
-	  "rules": "$A$B$E$F, $C$D$E$F, %25$A$D$E$F, %25$C$B$E$F"
+	  "rules": "$A$B$E$F $C$D$E$F %25$A$D$E$F %25$C$B$E$F"
 	},
 	"elf male": {
 	  "m": "Rilitar Bellas Hagwin Vander Hagwin Ayen Hastos Ruvyn Morthil Nremyn Quynn Kolvar Mythanthar Respen Pelleas Rhys Riluaneth Vulmon Taegen Phaendar Goras Arbane Ilimitar Theodred Folmon Ailluin Myriil Anfalen Bellas Malon Triandal Iliphar Ascal Maeral Traeliorn Oenel Keletheryl Vulluin Rhys Nyvorlas Khuumal Kuornos Pleufan Jorildyn Molostroi Theodred Tehlmar Lyklor Orym Lathlaeril Kiirion Khidell Alabyran Xhalth Folmar Alduin Eroan Inialos Rhys Juppar Jannalor Felaern Aywin Vesstan Ilrune Melandrach Thalanil Phraan Nopos Theodred Agandaur Evindal Dakath Aimon Cluhurach Arbane Orist Shaundyl Fhaornik Josidiah Anlyth Vaalyun Xalph Connak Olaurae Myrddin Ellisar Juppar Alosrin Almon Nym Lhoris Maiele Khatar Samblar Goll Oenel Kendel Aiwin Ettrian",
@@ -156,7 +156,7 @@
 	  "D": "lith maeg mind mith nith rael rind saer sar seld ser sil silm sind thael thaer thal thel ther thir",
 	  "E": "ad al am an ar as eb ed el em en er es ev il in ir ol thal thon",
 	  "F": "ad dan del dil dir fal ion ion lad las lin nar or orn ras rior rod rond ros thir",
-	  "rules": "$A$B$E$F, $C$D$E$F, %25$A$D$E$F, %25$C$B$E$F"
+	  "rules": "$A$B$E$F $C$D$E$F %25$A$D$E$F %25$C$B$E$F"
 	},
 	"fetchling female": {
 	  "s": "Br Dr Ec Eh Gr Ik Il J M N Or Q Qr R S Tr Uc Ug Um Us Ut Uv X Y Z H T",
@@ -165,7 +165,7 @@
 	  "A": "o u",
 	  "B": "a e i",
 	  "e": "c h l m n r t",
-	  "rules": "%20$s$v$c$A$50e, %80$s$v$c$B$50e, %20$s$v$c$A$e$A$50e, %80$s$v$c$A$e$B$50e"
+	  "rules": "%20$s$v$c$A$50e %80$s$v$c$B$50e %20$s$v$c$A$e$A$50e %80$s$v$c$A$e$B$50e"
 	},
 	"fetchling male": {
 	  "s": "Br Dr Ec Eh Gr Ik Il J M N Or Q Qr R S Tr Uc Ug Um Us Ut Uv X Y Z",
@@ -174,7 +174,7 @@
 	  "A": "o u",
 	  "B": "a e i",
 	  "e": "c h l m n r t",
-	  "rules": "%80$s$v$c$A$50e, %20$s$v$c$B$50e"
+	  "rules": "%80$s$v$c$A$50e %20$s$v$c$B$50e"
 	},
 	"fish": {
 	  "A": "bilp blib blip bloolgh blub blup boolp dilp dool floop ghool gloogh glob glop glub gluup googh guulgh ool plop polgh poolp quilp quolp sblop shib shup thilp thlup thoop",
@@ -189,12 +189,12 @@
 	  "B": "ahg baod beegh bohr bul buli burh buri chah dhak digri dum eghi ehm faogh feehm ghad ghah gham ghan ghat ghaw ghee ghish ghug giree gonkh goun goush guh gunri hah hani haogh hatoo heghi heh hoo houm hree ig kham khan khaz khee khem khuri logh lugh maoh meh mogh mouh mugh naoh naroo nham nuh ob oli orf ough ouh peh pogh pugh puh quagi rahoo rhoo rifoo ronkh rouk saom saori shehi shlo shom shour shul snaoh suhi suth teb thom toudh tregh tuhli ub urush ush vuh wah wuh yaum yauth yeeh yih yuh zham" ,
 	  "P": "Doh Rei Mih Fah Soh Lah Tih Daoh" ,
 	  "p": "doh rei mih fah soh lah tih daoh" ,
-	  "rules": "$P$A$20B$10B, $P-$A$20B$10B, $A$20B$10B$p, $A$20B$10B-$P"
+	  "rules": "$P$A$20B$10B $P-$A$20B$10B $A$20B$10B$p $A$20B$10B-$P"
 	},
 	"giant male": {
 	  "A": "Ahg Baod Beegh Bohr Bul Buli Burh Buri Chah Dhak Digri Dum Eghi Ehm Faogh Feehm Ghad Ghah Gham Ghan Ghat Ghaw Ghee Ghish Ghug Giree Gonkh Goun Goush Guh Gunri Hah Hani Haogh Hatoo Heghi Heh Hoo Houm Hree Ig Kham Khan Khaz Khee Khem Khuri Logh Lugh Maoh Meh Mogh Mouh Mugh Naoh Naroo Nham Nuh Ob Oli Orf Ough Ouh Peh Pogh Pugh Puh Quagi Rahoo Rhoo Rifoo Ronkh Rouk Saom Saori Shehi Shlo Shom Shour Shul Snaoh Suhi Suth Teb Thom Toudh Tregh Tuhli Ub Urush Ush Vuh Wah Wuh Yaum Yauth Yeeh Yih Yuh Zham",
 	  "B": "ahg baod beegh bohr bul buli burh buri chah dhak digri dum eghi ehm faogh feehm ghad ghah gham ghan ghat ghaw ghee ghish ghug giree gonkh goun goush guh gunri hah hani haogh hatoo heghi heh hoo houm hree ig kham khan khaz khee khem khuri logh lugh maoh meh mogh mouh mugh naoh naroo nham nuh ob oli orf ough ouh peh pogh pugh puh quagi rahoo rhoo rifoo ronkh rouk saom saori shehi shlo shom shour shul snaoh suhi suth teb thom toudh tregh tuhli ub urush ush vuh wah wuh yaum yauth yeeh yih yuh zham",
-	  "rules": "$A$20B$10B, %50$A-$A$10B"
+	  "rules": "$A$20B$10B %50$A-$A$10B"
 	},
 	"gnome female": {
 	  "m": "Bonyulo Bixdink Bilgus Lissgus Bimrgo Thinklinkey Bimkiulo Lysthink Fenyvizzle Mittlesizzle Fildilinkey Lymtink Thinbick Thenlinkey Glinkfinkle Bipflonk Bixgus Bilbeefonk Tyllofizzy Mitbus Kitlelinkey Talkink Binkybink Liskink Gynnulo Gynndomink Glinbynus Tankoflonk Tallinkey Klokiwack Thinbythin Filliflink Taldidinkle Gynnoago Nitly Ketklinkle Thinkkeesizzle Hinkabrick Mitthinkle Bodibik Syrbyfinkle Ketris Syrbik Dimbick Kelwick Lokeefizzy Juladink Lololinkey Tilkitinkle Lymbibik Dibink Tannus Elsizzle Elbeefinkle Mitash Bipvizz Lysskyago Dosizz Kithdiwack Lyssfizzy Tilkink Liswin Cargus Byloflink Fenflynk Bipsizz Dinkulo Gynbithinkle Tilthink Juldeeulo Katdomink Fynkkink Katkiflonk Lisble Merdiwack Gynndeedus Kathobrik Lymkeergo Katlofizzy Lysflonk Carvizz Filble Gellergo Thenash Binkwin Binklitinkle Gelulo Tynbrik Dindamink Ditinkle Billeklinkle Nittlebik Klofizzy Filgus Lymago Mittledigo Tindinkey Banus Julbink Ditink" ,
@@ -212,7 +212,7 @@
 	  "A": "Ach Adz Ak Ark Az Balg Bilg Blid Blig Blok Blot Bolg Boor Bot Bug Burk Chu Dokh Drik Driz Drub Duf Flug Gaw Gad Gag Gah Gak Gar Gat Gaz Ghag Ghak Ghor Git Glag Glak Glat Glig Gliz Glok Gnat Gog Grak Grat Guk Hig Irk Kak Kav Khad Krig Lag Lak Lig Likk Loz Luk Lun Mak Maz Miz Mog Mub Mur Nad Nag Naz Nig Nikk Nogg Nok Nukk Nur Pog Rag Rak Rat Rok Ronk Rot Shrig Shuk Skrag Skug Slai Slig Slog Sna Snag Snark Snat Snig Snik Snit Sog Spik Stogg Tog Unk Urf Vark Vog Yad Yagg Yak Yark Yarp Yig Yip Zat Zib Zit Ziz Zob Zord",
 	  "B": "ach adz ak ark awg az balg bilg blid blig blok blot bolg bot bug burk bus dokh drik driz duf ffy flug g ga gad gag gah gak gar gat gaz ghag ghak git glag glak glat glig gliz glok gnat gog grak grat gub guk hig irk kak khad krig lag lak lig likk loz luk mak maz miz mub murch nad nag naz nig nikk nogg nok nukk og plus rag rak rat rkus rok shrig shuk skrag skug slai slig slog sna snag snark snat snig snik snit sog spik stogg thus tog un urf us vark yad yagg yak yark yarp yig yip zat zib zit ziz",
 	  "p": "ah ay e ee gah ghy y ya",
-	  "rules": "$A$p, %30$A$B$p"
+	  "rules": "$A$p %30$A$B$p"
 	},
 	"goblin male": {
 	  "A": "Ach Adz Ak Ark Az Balg Bilg Blid Blig Blok Blot Bolg Boor Bot Bug Burk Chu Dokh Drik Driz Drub Duf Flug Gaw Gad Gag Gah Gak Gar Gat Gaz Ghag Ghak Ghor Git Glag Glak Glat Glig Gliz Glok Gnat Gog Grak Grat Guk Hig Irk Kak Kav Khad Krig Lag Lak Lig Likk Loz Luk Lun Mak Maz Miz Mog Mub Mur Nad Nag Naz Nig Nikk Nogg Nok Nukk Nur Pog Rag Rak Rat Rok Ronk Rot Shrig Shuk Skrag Skug Slai Slig Slog Sna Snag Snark Snat Snig Snik Snit Sog Spik Stogg Tog Unk Urf Vark Vog Yad Yagg Yak Yark Yarp Yig Yip Zat Zib Zit Ziz Zob Zord",
@@ -261,7 +261,7 @@
 	  "v": "a a a e e i",
 	  "A": "o u",
 	  "c": "t k r m n",
-	  "rules": "$s$e$v$20c, %10$s$e$A$40c"
+	  "rules": "$s$e$v$20c %10$s$e$A$40c"
 	},
 	"hobgoblin male": {
 	  "s": "Ak Bek Dor Dur Fet Ha Keth Kolg Kur Malg Mev Ok Pold Rold Salt Tet Tot Turg Ut Zild Zold",
@@ -277,14 +277,14 @@
 	  "s": "Ad Aer Ar Bel Bet Beth Ce'N Cyr Eilin El Em Emel G Gl Glor Is Isl Iv Lay Lis May Ner Pol Por Sal Sil Vel Vor X Xan Xer Yv Zub" ,
 	  "m": "bre da dhe ga lda le lra mi ra ri ria re se ya" ,
 	  "e": "ba beth da kira laith lle ma mina mira na nn nne nor ra rin ssra ta th tha thra tira tta vea vena we wen wyn" ,
-	  "A": "Aelf Aethel Beald Beorht Cwen Deor Ead Eald God Gunn Hild Leof Mild Os Sae Sige Thur Wig Wine Wulf" , 	 
+	  "A": "Aelf Aethel Beald Beorht Cwen Deor Ead Eald God Gunn Hild Leof Mild Os Sae Sige Thur Wig Wine Wulf",
 	  "B": "Ac Aelf Aenes Aethel Aew Ard Arm Baerh Barda Bay Beald Bel Beo Beorht Beorn Beran Bitan Blac Blaec Blaed Bland Bote Bregu Brun Burg Cadda Caed Cen Ceol Cuic Cuth Cwen Cyne Daeg Daegel Daegga Deal Deor Dern Dude Dun Ead Eald Ealh Ean Ear Ecg Eofor Frea Frith Gar Geat Gisel Glaed God Gold Graeg Grim Gunn Guth Halig Hard Hari Heah Heana Heard Heathu Helm Heort Here Herle Hild Hlot Hoga Holen Hrof Hroth Hun Hwit In Isen Kettil Lang Leod Leof Mael Maer Maht Mild Mund North Noth Oe Ondes Ord Orme Os Raegen Rand Read Ric Rim Ruh Run Sa Sae Secg Sele Sig Sige Snel Stan Strang Sunu Swet Swith Theod Thur Tila Tort Treuwe Trum Tun Wacer Waer Wald Walt Weald Weard Wict Wig Wil Wine Wulf Wusc" ,
 	  "C": "beald beorht burg flaed frith gifu gyth here hild leofu maer or raed ric sige thryth waru weald wig wulf" ,
 	  "D": "aeldra aesc arm beald beorht beorn bert bote brand burg cromb cyne deal deor dreda ecg eofer flaed frea frith fugol gar geat gifu gild glaed god gold grim gyr gyth haele hard heah heard helm here hild hun in kettil lac leod leofu mael maer maht mon noth nyd or raed rand ric rim run sele sig sige snel son stan sterre strang sunu swith thorne thryth uald wacer wald walh waru walt weald weard weorth wict wig wil wini wise wold wulf wyn wythe" ,
 	  "E": "Millosila Arielona Lausia Lemana Gruitara Camindria Audalaine Craetotis Nartia Canoriana Caellia Vilendra Hotira Alcemma Janollia Vamma Bumania Restifre Pladrie Narissandra Praxenis Sylolga Sevexedes Refza Lenne Emefora Jandra Jallae Alendia Bumma Valatia Marlerta Termana Jastida Lylias Gaebia Aemirana Netira Silanonia Canovolia Buntallea Lavirida Etimma Parida Brostira Marlevita Faumitia Plaldana Vacilia Pelemmana Faundra Faustindria Agristia Orenoa Dominibylla Vonstance Avinnia Sibymilia Julintea Isolea Restinda Famitia Fentuleria Gruistae Dominicella Rafolfre Pelerida Cinstance Sabrilene Julitara Isafza Maraldana Perlena Antonara Aemistia Roserta Sabrixedes Lekeriana Julene Aemisala Carmassia Adriassinia Brovresa Sedara Vettoria Erila Gera Safira Tundia Arellea Arestira Tunitia Constase Gaeriana Girara Camitis Fammance Ahexedes Vittobylla Galenonia Lalaillea Vilecina Marlentia Pence Pelleliana Avrellona Flannia Indabel Carlofora Laurise Ingugerd Astrmund Ariine Haemur Jormlaith Lamiari Nilssteir Kolmgeira Bodnhild Beima Frafrida Aelasteir Minya Kjoone Bodilaith Bujorg Hrebbi Swanlver Maeorg Mavrtur Jorine Fredtlogi Petred Horsete Matlta Aeribbi Susga Evetith Svengela Rinlief Aelse Fravild Kjoa Sappjard Sotrior Eirudo Sofiinna Edlfnhild Breyo Haegreir Aetali Maresif Agand Susith Olfilla Thaestris Tildeki Alvaydis Edlsta Ekkjard Tovdur Dagmund Fralorg Horseigr Sottkja Eislfrodi Dagnna of Stuhn Sofigljot Froir Angiide Haferd Vibly Eyjadil Lieena Grekning Isgedis Katlny Lillbbi Ulfrljot Agnaari Tekver Laieror Birestris Rinki Aeginna Lynllka Hyrthe Vibeld Jenin Lydka Anngarte Frukmlaith Harlevi Nettlevi Illdteir Fjotdvild Elisi Temi Haertur Hafjgja Sylguki Eydnhild Sorjorg Hildwen Rigmor Macaird Alejaarn Aerki Eislief Abelun Ursiestris Gwenina Jollief Brinsten Malydis Iddrela Aelaeke Kirsgerd Editror Finnga Njadtild Lieete Bujfnhild Swanrdis Lilfa Ursirun Ionaarte Haelith Irglver Lailene Barrtra Gertta Fralrek Yrsabbi Gerria Hreorg Ingelone Thalgi Holrta Gretski Modrine Fraien Belladiana Marie Elyzhe Ariele Bovkhna Carcanelle Chaninne Modhille Lysnette Baberilie Helveline Relana Lielrlette Michyssa Senyna Antghre Naneerilie Nanaiette Angesande Fasehre Dabth Belesette Zoette Rhianna Jolrine Ronelyn Nanassa Caiara Henice Asclinie Uailche Helvha Roxnique Aurniele Babenette Estebeau Malvguerite Marayvyra Cannadette Matiiette Julinetta Cairhelle Liseigh Rosinetta Rhihe Coleda Cananie Frayne Adribe Amartte Matianna Rosahre Belyn Baberie Yvalle Mabrausa Lisehine Riaalinie Irenanique Daierilie Marilde Evanyrrya Emuane Miliand Naneadette Talaalyn Estona Abeloinetta Claciene Amalynn Chrystyvyra Rochudette Ursalin Edwina Adithen Fraace Antoselle Matienne Dabihel Uaieau Deralyn Auraitte Guliayl Fraene Syneyn Pierine Malhe Edrlene Kaylah Hana Kyla Bertie Laila Brooks Ida Halsey Tiana Justine Carol Helen Anabel Amy Kaitlin Chelsey Maidy Rosemary Natalie Talia Julie Selwin Edlyn Maidy Sandra Lindsey Erika Carina Jaime Judith Palmyra Luelle Allie Lee Isabela Madalynn Nicole Brooks Abigale Elyse Johana Hollace Afton Christiana Taya Jayla Elisa Ashleigh Kimmey Lilian Joan-Marie Lovie Juliet Barbara Tori Dasia Madelynn Kyra Bria Kiley Alice Joan-Marie Renee Margarita Macie Elizabeth Alysa Armani Robina Sybil Aida Brooke Kaylee Ashlynn Zoie Alden Catarina Selwyn Aubrey Yvette Aislinn Mariana Madisen Melany Shirleigh Hollie Ashford Reese Poppy Sydnie Valena Madilyn Jenna Raven Kaela Emilie Ariel Kaliyah Jaelyn Jeanette Camyron Julia Adeline Riley Veronica Daralis Riley Miracle Kate Nya Aubree Bryana Jana Kyla Aurora Fern Fiona Hayley Gabriella Melina Alisha Kaila Gayle Kirsten Yetta Karli Madelynn Reilly Lauryn Kasandra Jadyn Madisen Lillian Ellyn Corliss Chelsea Krista Julianne Ashlyn Ashlee Delilah Joana Julianna Selby Amber Kathryn Ashford Jenny Carlie Maeve" ,
 	  "F": "Demelza Eseld Jenifer Kerensa Lowenna Morwenna Rosen Tamsyn Tryfena Wenna" ,
 	  "G": "Ailla Angelet Arranz Athwenna Banallan Barenwyn Berlewen Bersaba Beryan Blejan Bryluen Burien Caja Carenza Ceinwen Chesten Columba Conwenna Cordelia Crewenna Cryda Delen Demelza Derowen Derwa Dywana Ebrel Elestren Elowen Endelienta Endelyon Eseld Eselt Esyld Eva Ewa Ewe Glanna Gweniver Gwennol Hedra Jenifer Jenifry Jenna Jowanet Kayna Kelynen Kensa Kerensa Kerenza Keresyk Kerra Kew Ladoca Loveday Lowenek Lowenna Mabyn Manacca Mariot Marya Melior Meliora Mellear Melloney Mellyn Melwyn Melyar Melyonen Melyor Meraud Merouda Metheven Morenwyn Morgelyn Morveren Morvoren Morwen Morwenna Morwennol Morwetha Neraud Nessa Newlyn Newlyna Nonna Rosen Rozen Rozenwyn Senara Sevi Sowena Steren Talwyn Tamara Tamsyn Tecca Tegen Tregereth Tressa Trevenna Tryfena Vorva Weneppa Wenn Wenna Wylmet Ygerna Zethar" ,
-	  "rules": "$s$v$10m$10m$e, $A$C, %50$A$D, %50$B$C, %25$B$D, %20$E, 15%$F, 10%$G"
+	  "rules": "$s$v$10m$10m$e $A$C %50$A$D %50$B$C %25$B$D %20$E 15%$F 10%$G"
 	},
 	"human male": {
 	  "v": "a e i o u y" ,
@@ -299,16 +299,16 @@
 	  "E": "Frednath Orahkev Mannelf Jackdryt Cla-cuth Chael'hal Lettbeorn Trikedra Ceo Berferum Terri Miken Gathas Sigvid Meschael Lafanne Hewdon Owig Do Richvid Fredcar Cenea Mitea Rahvia Risbryt Forthi Bri-here Joanmeri Theod-stan Stanlaumi Wilsam Ferfred Hamcon Gardba Fledcen Gardnas Sada Rolter Jeffhildi Chelwil Gifugar Nan Casfast Sanjo Vinan Brytjo Burba Wilcon Risever Len'char Tonbeth Chelsu Shanantine Chelaldea Nii Seph Guthna Grimber Eal Lichet Viakebert Edethelbrand Ty'wise Nathchardfer Chael'ma Rol-leofu Beorth-leof Garrolegel Ja-rie Ferd'isen Jo-ter A-bri Sere'vin Men-tom Red-stan Stewen Fridhol Esc-acar Ga'adel Nabetlett Nanisendod Ever'sam Cwenbeobeo Pe'ron Ha'syl Thonyferum Timchar'ni Diclas Ricuthli Risleelaf Rich-ber Holfledceol Seph-son Timpherfrednya Gartonred Syl-fred Leofuvinwardmas Triwarucrow Niellensam Deb-les Jen'carge Ste'tonsigdun Crowgardtyle Ferd'beo Egel'bet Crowjoanwilman Paul-and Pher'raniel Sadocleofuleof Halethelbeornliam Ris-riephie Brasbeornliamren Thy-winevia Hevellham-na Lacjencasjack Ridsonniman Tynabeochar Tim-ferumcon Nashe-ald Maannnaldnath Lyfrea Kencen Cas-do Brytlin Drachard Eddas Tonar Charfrea Ratine Lauloc Lycome Debtheod Briwig Gehelm Rocasdan Elila Gormaeli Lacman Halchet Lauma Holgin Hroinolf Rustrinn Brieman Kodgan of Stuhn Stenhar Gukssen Virlund Haakdor Rakorygg Sjarguri Nierenor Andrstein Jollvid Joriorn Olfrnz Nysarr Fareoslod Brynrri Manhatar Hjovild Assur Skjellyn Balfrek Fanrd Uchlti Svormir Pelflfi Hlogorgh Hlofwellyn Hedtar Istanjolf Assuls Swydheim Sjorndi Audmleid Kolhardt Skulrunn Mauhies Reiner Vekeaf Irreld Brunul Bitlir Oslli Alvonel Beinmek Frikerd Saernwulf Holgguri Krakus Raegrir Jurgruuf Aenaki Angred Snorlvar Lonlaug Snatneld Vigelf Hjote Bronael Deruk Verndall Aslfthjolf Sibbondir Sigdkmund Arcldar Aenvaul Thalkr Jayrkun Avedmir Slaruuf Saetndi Benoimk Sorker Rolgou Galbald Algoell Yngntiarco Vrailstein Oslafmare Thiani Hylvild Alruuf Godrro Hanses Karllvald Trilri Idlatneld Koliman Higirolf Karrid Kjorstaag Raetneld Frodnnen Jollknolf Hafae Rakonil Lorkrn Laraak Eorlhelm Onmues Meksmar Tovvild Grjorom Talmeskr Hewngarel Vipidall Gurmund Gjalten Fjolgerd Kunaflod Geirom Lassrnskar Heddrbald Ortinjolf Versim Lynoundr Msialdr Kyrngg Oritberius Crualinus Graex Rodwe Glabpinian Corentor Dranalus Malpttus Durnin Zedentor Garrffan Corlivupis Linuondeius Gavzone Forbrio Vlaustius Velunin Baszerus Pinaortius Breonymus Vlanren Sergrinus Namtans Matulav Remailias Dranllius Irlalatinus Murder Albto Barogus Wuliulus Luthuarius Otiich Somulcabor Valuelivupis Servogesto Depuhonder Telrphon Danulicus Steolian Codscus Proilvus Plittene Giovanni Tapas Galgesto Andrcentor Ralnnius Alegren Gellreas Salvtor Captus Salnolian Cartman Cassns Marilias Decero Oritideratus Aquiuarius Atteius Cidtimus Gavntin Alberic Varnav Audeexus Sulerio Vonelus Hirrator Dionnhonder Merlius Kaslrtene Tietimus Ormscus Audalius Fraros Bendlvus Brotque Nataher Synninius Jooreius Amalinus Zenoinian Larrhius Marseric Viteenix Barosanis Cartder Nirterio Ralltinius Larscius Serwyn Jiroventus Naspav Maswe Ramtor Caivanni Albeorallen Vlaerius Cicetor Arlumeliorus Belcourtaine Alagise Berntax Cirgnstien Mattrtick Marcaldald Joulynver Jharantoran Uthntax Kasasien Eugelon Ennachnton Gerentente Phinerrice Rahntienic Idhgonav Robrdpar Berananuel Renlleert Pauannel Giricnach Edgumal Amianven Brananrick Sylocard Jercders Pauulmas Irbnachis Marcitusentien Andccer Mattcoisyd Jhastophecetus Albinere Benardlan Mauanrick Viceulmas Banrier Coliretus Jakbbard Gryfenr Rahasien Nolard Froaniselius Gillleert Gastnrion Gryfionthel Chrisedt Mercmmubin Relonard Beldach Stanberry Hendrick John Wheeler Dixon Scotty Trevon Jorden Forrest Alton Pearson Neilson Ozzie Lukas Varianus Westbrook Morven Douglas Keanu Mathew Manning Ransley Hamilton Triston Dallin Darrin Erick Harv Bert Calvert Patton Ryton Marsden Oswin Sanborn Jaden Darrin Bergess Normie Bordan Glenn Karl Jagger Hyatt Clifton True Caden Albert Wheeler Nelson Reginald Elton Thormond Jarrod Ben Daryll Bronson Kenton Allan Jake Studs Solomon Rohan Quintin Gabriel Connor Whit Pierce Marshall Colby Wake Dwenn Martus Jack Shane Casey Toby Jorden Brentan Steve Harvey Mark Bryant Caden Studs Spence Lukas Rabbit Jaiden Beldon Stanbury Adrian Winfield Bo Conrad Keenan Pierson Will Ted Nolan Neil Chuck Renault Carson Wesley Dillan Rell Winfred Roderick Brocton Howard Kipp Stuart Ramsey Sawyer Andrew Daryl Darrel Terrel Barksdale Dwyghte Marsdon Wallas Turner Braxton Whitby Westcott Webb Charlie Newmie Daniel Lindon Edmund Shane Gael Millard Braydon Casey Corey Waverly Stockwell Tristin Johnny Manley Brodie Eduardo Robinson Burne Axel Remmie" ,
 	  "F": "Daveth Digory Gerens Jacca Jory Margh Myghal Perran Tristan Wella" ,
 	  "G": "Alan Alun Arthur Arthyen Austell Benesek Blyth Branek Branwalather Brengy Breoc Bryok Budic Buthek Cadan Cador Cadreth Caradoc Carasek Carrow Caswyn Cleder Clemow Clesek Colan Colyn Corentyn Cornelly Costentyn Costetyn Crantok Credan Daveth Davy Denzel Digory Docco Doniert Donyerth Durngarth Elid Enoder Ervan Feoc Gawen Gerens Gerent Germoc Germoe Glewas Goran Gorlas Goron Gorthelyk Gourgy Gwinear Gwynek Herygh Hicca Howel Hydroc Iahan Ives Jacca Jago Jamma Jory Jowan Kaveran Kenal Kenan Kenver Kenwyn Keresyk Kevern Kitto Ludwan Maban Madern Malgen Manuel Margh Marrek Massen Mawgan Maylwen Mellyan Melor Melyn Meriasek Merryn Milyan Myghal Nadelek Nechtan Nerth Neythen Nicca Padern Pasco Pawly Peder Pencast Peran Perran Petroc Petrok Piran Rewan Ruan Rumon Ryel Samson Seleven Selyf Sennen Silyen Sithny Sythyn Talan Talek Tomas Trevedic Tristan Trystan Udy Uther Uthno Vark Vyvyan Welet Wella Weryn Wethinoc Withell Worrec Yestin Ythel" ,
-	  "rules": "$s$10v$10c$10m$e, $A$C, %50$A$D, %50$B$C, %25$B$D, %20$E, 15%$F, 10%$G"
+	  "rules": "$s$10v$10c$10m$e $A$C %50$A$D %50$B$C %25$B$D %20$E 15%$F 10%$G"
 	},
 	"human surname": {
 	  "e": "Fenarikversen Asardesen Fenrarkessen Walker Jurgarnessen Saransson Alehrsson Gjaldersen Harariksen Mjarikeson Ingrarmesen Engmaenson Ehrensveson White Hararmesson Gjarmessen Torvenrsen Crow Hahrersen Bjaldeson Sorahrikssen Singer White Saransen Alrardessen Kjaldssen Hahrenssson Fenraensen Bjariksen Kjanssen Ingrenssson Mjorisverson Ahlanssen Soraroksen Jargisssen Kjahrson Ulfransson Jurganerson Northerner Haggard Torvahrssen Harisson Asgornsen Lorentanus Giorette Posienus Hodgalian Hasanius Dorain Armieim Ramabo Oload Velvtlilia Sorand Petim Bruienus Bradronicus Wavlocius Hofidenius Conmoton Ohoengius Riliadia Krenix Logsia Coluseius Pelaus Douatrius Oloacia Trebol Cadilocius Vicirus Vasillin Arioria Plalia Aerilida Jeraler Cerrianus Curitiulonus Iuland Sibalis Hereonicus Caeredius Plalades Krextarian Plalar Gabciatius Orannnus Valneim Curiranox Facilalian Sorllius Fraellia Curtlilius Arcand Ostosinia Fraharia Vliarus Vunipter Monnian Vinkwell Wavrtinius Purttian Nuncdes Jannder Anzant Angioria Melinnius Catsillius Wavrustiris Furollius Micousus Iniavius Acciagan Lioilius Petrllida Sirumevus Famlidus Hodgimus Glorullus Loldia Decintanus Lovvia Faulocius Tasinnius Dralon Flacanian Aretdacia Catrrel Runeissaeia Scerrus Scinia Poniorman Scotance Ratodicus Floey Sepunceia Hertnoslin Catelian Voniennius Cartuleius Cedndia Junenus Jannaso Stoiierre Jurnnie Lencgine Maral Philla Bincert Endetieri Hastcel Jentene Viraey Ganetecou Macive Rolsmax Ganory Raraire Jeaford Tyneques Jond Erglle Freyamont Madaenard Aumitte Biennis Herrach Limquardt Marieron Settuchamp Bellert Valaire Phinette Laboic Binion Amevanne Lothle Artquardt Jemhaire Gaerlion Philie Blakoric Moorrush Trafield Andhart Malerry Maneamont Hawklamont Birfield Dufnette Petinette Panovieve Valtvanne Johnson Norton Outerbridge Foy Stanton Langley Carlton Clive Addington Home Thorp Thackeray Tattersall Crowder Beverly Clapham Langley Swet Camden Haley Morley Blakemore Barney Morton Hamet Swailes Whitley Hamilton Bentham Lincoln Clayden Bourne Brady Branson Nutlee Stanford Spaulding Swale Beckwith Swett Pinkerton Shelly Remington Chatham Huxley Chester Morton Berkeley Denholm Royston Stanford Nunnally Dryden Brownrigg Smythe Kimberly Stamper Dayton Foy Hornsby Reeves Hildom Notley Asheton Colton Haley Adlam Merton Smythe Byron Shurman Brandon Preston Clayton Smithy Swales Duke Nutlea Fisc Ramsey Thornton Graeme Stanton Beverly Hartford Blakemore Dalton Dalton Dudley Hayden Bradford England Acton Clare Graeme Stampes Sutton Berkeley Graham Allerton Stanley Blackwood Middleton Law Cheek Morton Brown Stamper Brent Bunce Coombs Alby Digby Swale Nunnally Reed Barclay Sagar Currington Carlyle England Ashley Oakley Sweet Knottley Foy Stevenson Bradly Emsworth Clifton Sharman England Branson Reeve Bentham England Penney Breeden Dryden Steven Deighton Hackney Garfield Nibley Nutlea Trollope Kendall Padley Hayes Landon Viciuseius Meroustius Velvonia Valonix Curid Aeridwine Aerima Amiurus Salentius Artre Conidwine Kreustiris Sialissaeia Sexbenus Gonedenius Decitian Tragdenius Sceranis Sesder Donnorman Atruius Fauio Matynoslin Plenceia Scotllida Iuluneim Aciltrius Cipsiso Paleer Bolapin Artoidia Pevver Varanius Aurrpus Cingoner Agruuliulus Cenoanian Artena Quintius Cerulus Mantanus Peleadia Arteectus Pelitian Auruino Loraich Fulcbatius Vidussiner Melirecus Blondacia Rulimevus Curiccus Sibunia Vunnssius Midal Roseagia Benissaeia Hanouceius Melinagus Riendicci Cnililia Purllida Doraarus Claeccus Muslilius Amalidus Plingrius Jurubenus Carrellius Broildor Sesttilius Harsarel Axivelus Nereciatius Harmario Horaiusus Iuluium Philne Turrrellius Civgoner Polti Allronicus Evitedius Broagrius Aerlalian Quauseius Hervius Laenlilia Hoflienus Decige Vonver Lexarian Bolandia Cinnonius Signanis Titullin Cariesius Calreia Plaelius Curicinnius Fraugrius Orienix Graely Herreius Virina Tullsiner Posstiris Cinnrium Burildor Mussnnia  Hahrervonsdottir Mjahriksdottir Tarbarikesdottir Bjaeldsdottir Jorgenrdottir Torbariksdottir Argarikesdottir Tarbifkdottir Ulriksdottir Windrime Ravencrone Mjendottir Sorarnsdottir Ehrenrsdottir Bulwark Bjoerdottir Hahrorndottir Jurgarsdottir Alfahriksdottir Harorkesdottir Mojisversdottir Bjoaldersdottir Mjanderdottir Harornedottir Herarmedottir Sararndottir Mojensvesdottir Bulwark Ingmaldedottir Bjoornsdottir Sarifkdottir White Kjarsdottir Ingrifkdottir Sarehrsdottir Wulfharth Sorardesdottir Tarbifksdottir Mojehrsdottir Kjarnesdottir Bjissdottir Bjisorsdottir Alranerdottir Enrarikedottir Ingrenrsdottir Razegette Jondalaine Jelsaud Aulnick Mannognese Guliene Jencal Tusrry Phirienele Lauues Chree Ancooriane Manaud Yscrnis Adroal Franrush Locippe Chrlaine Settbatha Onius Marahans Jentorard Laudrelle Acquieri Beastiana Valteance Hawkuelle Braues Belevan Acqufort Mallntene Auras Lencreinace Fraslle Erelulanie Dolbanne Motiuelle Maunand Dielcel Stoialaine Leteton Laroinie Bontick Rolaence Frainie Eardel Rarolaude Lortavan Woodique Brolee Stegrelle Rarilie Eartrine Yvierre Surikeley Moreley Rolre Jemmarc Mothwode Encerrienele Selolanie Aurarde Alouault Guerien Enderk Ernas Merivan Ervrel Eardinius Lylcette Mortal Ildenius Adrreinace Velrush Galmaulese Panofield Endrchad Melion Peneion Panoufort Biedwulf Sidravan Ninlerd Jesomax Rararc Vettuette Yvierles Frerorard Natic Magiont Mildenhall Stevenson Rutland Newbery Helton Shelby Godwin Nutlee Berkeley Riley Byron Smithies Morley Ridley Williams Stevens Hartford Abram Sherman Clifton Mendenhall Clive Shurman Hackney Thornton Ashley Godwin Hammett Sampson Ashton Ainsworth Swet Stanton Swett Presley Thornton Fiske Smith Keats Melling Shirley Eastoft Earle Clayden Shelby Adlam Torp Sweat Chester Peddle Newbury Shurman Thorpe Dalton Eastaughffe Cooper Harding Kimberly Gartside Swales Roscoe Goodwin Hamilton Bradford Stevens Garside Nash Pinkerton Eastoft Oldham Gartside Townend Hayhurst Wither Yeardley Stonebridge Royston Colby Rutland Wyther Keats Penny Lea Spalding Burton Stansfield Fisc Nottley Notleigh Cotton Sidney Clapham Reid Bentham Langley Knottley Dryden Digby Dudley Swale Presley Cooper Goodwin Hale Fletcher Nutlee Soames Peddle Helton Breeden Hartford Smythe Swales Browning Eastaughffe Ashton Stanton Tattersall Barclay Clayden Lindsey Crowder Chatham Wheatley Atherton Asheton Kelsey Burbridge Wheatley Duke Benson Law Acton Holt Noonan Sydney Mildenhall Morton Spaulding Langley Harrison Paddle Darby Alby Ogden Merton Chatham Crowder Graeme Addington Ironkettle Merkiller Nightingale" ,
-	  "P": "_the_" ,
+	  "P": "the" ,
 	  "m": "Greycloak Trollsbane Northerner Maulhand Outlaw Stonearm Wanderer Gifted Lean Innocent Frenzied Halfhand Haggard Wild Broken Wise Knife Unbroken Tongue Calm Ebonhand Lean Elfkiller Unlucky Flayer Peacock Rotted Candle Blind Outcast Unseen Contemptible Despicable Rockbreaker Large Windrime Warlock Sweltering Old Young Tiny Bloodmouth Trollsbane Cook Beard Bright Crook Long Short Small Strong Swift Blythe Free Fry Good Keen Moody Pratt Sharp Smart Snell Raven Ironic Abbott Angel Baron Bishop Darling Earle King Lord Loveman Child Cousin Goodman Guest Master Newman Palmer Pilgrim Peagrim Pegram Bald Bold Faithful Hard Savage Stout Rider Hare" ,
-	  "p": "Ballard Blackman Black Brown Crisp Green Gray Grey Hoar Pollard Read White Whitehead Armstrong Turnbull Stark Bird Cock Crane Crowe Dove Finch Hawk Jay Partridge Peacock Pye Raven Rook Sparrow Swan Woodcock Wren Brock Buck Bull Bullock Drake Fitch Fitchett Fox Hare Hart Hogg Lamb Todd Wolf Flint Frost Gold Lilly May Snow Steele Summer Winter Free-Jumper Wet-Child Brittle-Nail Boulder-Cloak Soul-Anvil Poor-Smasher Once-Crusher Hearth-Loom Banner-Toes Free-Light War-Child Corundum-Sung Cloud-Strider Blue-Guard Summer-Skinner Double-Legs Anvil-Winter Knot-Tamer Wolf-Defender Thrice-Torment Night-Rival Blue-Defender Snow-Crusher Double-Finger Maiden-Hammers Oath-Mouth Honey-Loom Soul-Anvil Troll-Toes Snow-Shoal Doom-Foot Brittle-Maiden Dragon-Plank Troll-Thief Flat-Eye Corundum-Giver Iron-Thief Brandy-Shield Secret-Drums Seven-Shaper Oath-Tamer Ghost-Shaper Fine-Sage Shade-Hull Wine-Sot Poor-Maiden Red-Head Broken-Shaper Pure-Smith Anvil-Nose Boulder-Fur Flame-Giver Once-Tamer Early-Sung Swift-Spring Fair-Raed Early-Maiden Seven-Fire Far-Shifter Honey-Colossus Hammer-Tooth Golden-Swords Short-Bear Banner-Honored Triple-Leg Cairn-Crusher  Fair-Trotter Storm-Fist Head-Smasher Hearth-Hand Drunken-Arm Long-Brand Wolf-Gale Green-Tamer Worm-Scourge Cairn-Scourge War-Pommel Fine-Dawn Nail-Drinker War-Outlaw Rock-Hewer Death-Eater Nightingale Shadow-Raed Honey-Loom Nail-Mouth Little-Trotter Dark-Bearer Fine-Sailer Star-Skinner Dead-Helm Wolf-Winter War-Knee God-Torn Secret-Giver Slayer Bellow-Nail Night-Eyes Anvil-Brand Frozen-Plank Black Blackett Blackhead Blacklock Blake Brown Dark Dunn Dunnett Darkhead Blount Blundell Blunden Blunt Bright Fair Fairfax Fairhead  Gold Sherlock Shining_Locks  Read Reed Reid Rouse Rowse Rudd Russell Gray Grey Hoar Silver Ballard Pollard Cripps Crisp Curl Curley Curling Lovelock Beard Baird Grant Laing Lang Long Longbone Longfellow Longman Longshanks Bass Bassett Little Littler Peppercorn Pettit Petty Short Shorter Bigg Bradman Broad Broadribb Metcalfe Mutch Puddifat Pudding Thick Baines Bones Smale Small Smallbones Thynne Crookbain Crook Crooks Cruikshanks Crump Sheepshanks. General. Broadhead Greathead Head. Foot. Hand Whitehand  Blackie Brodie Brownie Godney Goosey Hawkey Hawkeye Littley Smalley Lilley Lilly White Rose Black Blackman Brown Carbonell Cole  Coleman Collier Moor Morris Pretty Sweet Beale Bell Blanchflower Blossom Fair Flower Flowerdew Honeydew Lilley Love Rose Sweet Sweetdew Sweetlove" ,
+	  "p": "Ballard Blackman Black Brown Crisp Green Gray Grey Hoar Pollard Read White Whitehead Armstrong Turnbull Stark Bird Cock Crane Crowe Dove Finch Hawk Jay Partridge Peacock Pye Raven Rook Sparrow Swan Woodcock Wren Brock Buck Bull Bullock Drake Fitch Fitchett Fox Hare Hart Hogg Lamb Todd Wolf Flint Frost Gold Lilly May Snow Steele Summer Winter Free-Jumper Wet-Child Brittle-Nail Boulder-Cloak Soul-Anvil Poor-Smasher Once-Crusher Hearth-Loom Banner-Toes Free-Light War-Child Corundum-Sung Cloud-Strider Blue-Guard Summer-Skinner Double-Legs Anvil-Winter Knot-Tamer Wolf-Defender Thrice-Torment Night-Rival Blue-Defender Snow-Crusher Double-Finger Maiden-Hammers Oath-Mouth Honey-Loom Soul-Anvil Troll-Toes Snow-Shoal Doom-Foot Brittle-Maiden Dragon-Plank Troll-Thief Flat-Eye Corundum-Giver Iron-Thief Brandy-Shield Secret-Drums Seven-Shaper Oath-Tamer Ghost-Shaper Fine-Sage Shade-Hull Wine-Sot Poor-Maiden Red-Head Broken-Shaper Pure-Smith Anvil-Nose Boulder-Fur Flame-Giver Once-Tamer Early-Sung Swift-Spring Fair-Raed Early-Maiden Seven-Fire Far-Shifter Honey-Colossus Hammer-Tooth Golden-Swords Short-Bear Banner-Honored Triple-Leg Cairn-Crusher  Fair-Trotter Storm-Fist Head-Smasher Hearth-Hand Drunken-Arm Long-Brand Wolf-Gale Green-Tamer Worm-Scourge Cairn-Scourge War-Pommel Fine-Dawn Nail-Drinker War-Outlaw Rock-Hewer Death-Eater Nightingale Shadow-Raed Honey-Loom Nail-Mouth Little-Trotter Dark-Bearer Fine-Sailer Star-Skinner Dead-Helm Wolf-Winter War-Knee God-Torn Secret-Giver Slayer Bellow-Nail Night-Eyes Anvil-Brand Frozen-Plank Black Blackett Blackhead Blacklock Blake Brown Dark Dunn Dunnett Darkhead Blount Blundell Blunden Blunt Bright Fair Fairfax Fairhead  Gold Sherlock ShiningLocks  Read Reed Reid Rouse Rowse Rudd Russell Gray Grey Hoar Silver Ballard Pollard Cripps Crisp Curl Curley Curling Lovelock Beard Baird Grant Laing Lang Long Longbone Longfellow Longman Longshanks Bass Bassett Little Littler Peppercorn Pettit Petty Short Shorter Bigg Bradman Broad Broadribb Metcalfe Mutch Puddifat Pudding Thick Baines Bones Smale Small Smallbones Thynne Crookbain Crook Crooks Cruikshanks Crump Sheepshanks. General. Broadhead Greathead Head. Foot. Hand Whitehand  Blackie Brodie Brownie Godney Goosey Hawkey Hawkeye Littley Smalley Lilley Lilly White Rose Black Blackman Brown Carbonell Cole  Coleman Collier Moor Morris Pretty Sweet Beale Bell Blanchflower Blossom Fair Flower Flowerdew Honeydew Lilley Love Rose Sweet Sweetdew Sweetlove" ,
 	  "A": "Berriman Care Curnow Noall Pearce Penrose Quick Rowe Trevorrow Vial" ,
 	  "B": "Andrewartha Angrave Annear Anning Bain Baragwanath Beckerleg Bedell Bennetto Bennetts Berriman Berryman Bescoby Bice Biddick Binney Blamey Boase Boden Bolitho Bonython Borlase Bosanko Bosanquet Bray Briddon Bryant Carbines Cardell Care Carlyon Carnell Carveth Causley Chegwidden Chenhalls Chenoweth Clemow Clemson Climo Clymo Coad Cocking Colenso Colley Congdon Corin Couch Cowling Craddick Crago Craze Crowle Cundy Curnow Daniel Deveril Dobell Dowling Eade Edwards Ellis Endean Eva Faull Frayne Freeman Freethy Galtey Geach Geake Godden Gole Goss Gribbin Gynn Hain Haines Hambly Hannaford Hannah Harris Hayne Hendra Hobby Hocking Hodge Hollow Hosking Hoskins Inch Isbell Ivey James Jasper Jelbart Jennings Jewell Johns Joliffe Jolly Keast Keen Keigwin Kempthorne Kersey Kestle Kinver Kittow Lander Landreth Lanyon Lawry Lean Leggo Liddicoat Lowry Maddaford Maddern Magor Martin Mayne Menadue Mitchell Moon Morcom Murrish Nancarrow Nankervis Nankivel Newth Nicholls Ninnis Noall Noon Oates Odgers Old Olver Opie Otes Palk Pascoe Pawley Paynter Pearce Pellew Penberthy Pender Pengelly Penhaligon Penhallow Penn Penrose Pentreath Penwarden Perkin Perrin Peters Pethick Phillips Poldark Polmear Praed Prowse Quick Quintrell Raddall Restorick Retallack Richards Rodda Rogers Rose Roseveare Rosewall Rosewarne Roskelly Roskilly Rouncefield Rowe Rowse Rule Rundle Ryall Sanders Scobel Skewes Smith Snell Spargo Stevens Tamblyn Tangye Tanner Teague Terrill Thomas Tinney Tonkin Trebilcock Tredinnick Trefusis Tregear Tregellas Tregelles Tregenza Tregloan Treglown Tregoning Tregonning Trelawney Treleavin Treloar Tremain Tremayne Trembath Tremelling Trenance Trerice Treseder Tresillian Trestrail Trethew Trethewey Trethowan Trevain Trevaskis Trevellick Trevelyan Treverton Trevethan Trevithick Trevorrow Trewarthen Treweeke Trewhella Trewin Trezona Trounson Trudgen Truscott Tyack Uren Veal Vear Vellenoweth Venton Verran Vial Vosper Voss Warne Warren Wearne White Wickett Williams Windle Withiel Yelland Yourand" ,
-	  "rules": "%50$p, $e, %10$99P$m_$p, %10$99P$m, %20$99P$m_$e, %20$99P$m, %10$A, %10$B"
+	  "rules": "%50$p $e %10$99P$m$p %10$99P$m %20$99P$m$e %20$99P$m %10$A %10$B"
 	},
 	"hyenas": {
 	  "A": "bree breekah cachinn chikaha chree eehya eengi eheh ghee gheu ghnee ghree grigri hee hyee ihih jheer nyaha snreeh yeenh",
@@ -329,21 +329,21 @@
 	  "B": "alu alz avu azaz baph baz cha fraz garl garu gla hra mal nahu nal nasu paz raz tha thalu bre dre gel gle gre hez rez rezu tze gzi hriz hzi idrau itha ixu lilu riz yil dromu gro lol moz olth oxu sco tho bu bul buz chru dru ghu gura guz hruz huz kul lurhz muz ru shu ssu szul thu ulchru utu vul zu zul baal ghaa kraa phaal raal saa bial oazo soaz ruaz gya yaa bael nee ziel yee aiaz shai reoz duoi drau ghau glau mau sau tzau iuz juu rhuu vuul zuu",
 	  "v": "u u u o o i i a a e",
 	  "c": "z y v r l j",
-	  "rules": "$A$v$c$B, $A$c$v$B, %25$A-$v$c$B, %25$A-$c$v$B"
+	  "rules": "$A$v$c$B $A$c$v$B %25$A$v$c$B %25$A$c$v$B"
 	},
 	"infernal 2": {
 	  "A": "Agh Alg Barg Chag Ghad Glab Grag Hrag Kag Kwarg Mag Nalb Sag Tharg Brelg Dergh Dregh Drelb Felg Heg Kleg Igg Rigg Blog Drog Grolb Kolg Krolg Lolg Mog Morg Nog Obb Ogg Olb Rogg Strog Thog Trob Tzolg Vogt Bub Bulg Druj Durg Frub Fulg Gub Hrud Hurg Jub Julb Nud Nug Nulb Rung Shub Stug Sug Szug Trulg Ulb Urb Vub Vulb Xub Zub Zug Zugt Aab Aag Glaag Haag Naag Raag Boaj Moab Uag Leegh Yeb Yeeg Aig Yibb Iog Droog Nyog Aug Baug Daurg Draug Gaub Laug Maug Naug Raug Saug Thaug Iub Iug Ruug",
 	  "B": "agh alg barg chag ghad glab grag hrag kag kwarg mag nalb sag tharg brelg dergh dregh drelb felg heg kleg igg rigg blog drog grolb kolg krolg lolg mog morg nog obb ogg olb rogg strog thog trob tzolg vogt bub bulg druj durg frub fulg gub hrud hurg jub julb nud nug nulb rung shub stug sug szug trulg ulb urb vub vulb xub zub zug zugt aab aag glaag haag naag raag boaj moab uag leegh yeb yeeg aig yibb iog droog nyog aug baug daurg draug gaub laug maug naug raug saug thaug iub iug ruug",
 	  "v": "u u u o o i i a a e",
 	  "c": "z y v r l j",
-	  "rules": "$A$v$c$B, $A$c$v$B, %25$A-$v$c$B, %25$A-$c$v$B"
+	  "rules": "$A$v$c$B $A$c$v$B %25$A$v$c$B %25$A$c$v$B"
 	},
 	"infernal 3": {
 	  "A": "Ach Akk Ash Azt Bahor Bar Bas Brax Charn Dak Hrax Lach Lazt Mat Nam Nazt Ralk Rhast Sark Slarv Tash Thak Thalur Thalk Vach Vap Dek Ech Fesh Gek Hrek Lech Met Ner Ter Blik Gith Igm Inax Irsch Kir Lis Lisk Lith Nilv Nirr Tlizit Bor Chon Goch Gor Goth Hoth Khor Kos Loch Lok Loth Moch Moth Noc Och Oth Rolk Roth Sot Soth Vrok Dun Gur Hun Luth Muth Nur Rutt Sut Sutt Szut Tur Urt Utuk Uzt Krych Nyth Slyth Gaan Xaas Boak Ruaak Yalm Haerx Iex Draum Gaur Glaur Rauk Saur Duum Nuur Ruun",
 	  "B": "ach akk ash azt bahor bar bas brax charn dak hrax lach lazt mat nam nazt ralk rhast sark slarv tash thak thalur thalk vach vap dek ech fesh gek hrek lech met ner ter blik gith igm inax irsch kir lis lisk lith nilv nirr tlizit bor chon goch gor goth hoth khor kos loch lok loth moch moth noc och oth rolk roth sot soth vrok dun gur hun luth muth nur rutt sut sutt szut tur urt utuk uzt krych nyth slyth gaan xaas boak ruaak yalm haerx iex draum gaur glaur rauk saur duum nuur ruun",
 	  "v": "u u u o o i i a a e",
 	  "c": "z y v r l j",
-	  "rules": "$A$v$c$B, $A$c$v$B, %25$A-$v$c$B, %25$A-$c$v$B"
+	  "rules": "$A$v$c$B $A$c$v$B %25$A$v$c$B %25$A$c$v$B"
 	},
 	"insects": {
 	  "A": "chirr chirrk hrikk kikeek kirrik kizz kree kreex krekk krich kutch kzirr rikik rritz rrizzch shikirr skeetz skirr skisk skrak skrix skut strid strix tchik thrih thrix tzirch tzuk tzurr",
@@ -421,7 +421,7 @@
 	  "A": "a eh en o",
 	  "c": "c d g h k l m n q r s t v z",
 	  "p": "al cit creeg crig den deen det din dit e eq el heek hc hk hz ik im iq kit kiz tch kwee kwik kzit meeq meq miq muq mvim neek nig nihn nik skee skiv skree skreek skrit skriv sneek snik tchee ven veen vic vin weesk wreek zez zis",
-	  "rules": "$s$v$c, %25$s$v$c$v$c, %10$s$A$c, %3$s$A$c$v$c, %30$s$v$p, %3$s$A$p"
+	  "rules": "$s$v$c %25$s$v$c$v$c %10$s$A$c %3$s$A$c$v$c %30$s$v$p %3$s$A$p"
 	},
 	"ratfolk male": {
 	  "s": "Ag Am B Br Cr Dj Dr En Ev G Gl Gn H J Icr Ik It K Kn Kr Kv N P Pr R Sc Sk Spl Sr St T Tin Tr V Vr Z Zr",
@@ -429,7 +429,7 @@
 	  "A": "a an eh en o",
 	  "c": "c d g h k l m n q r s t v z",
 	  "p": "cit crag creeg crig dahl den deen det din dit eq heek hc hk hz ik im iq kan kit kiz tch kwee kwik kzit meeq meq miq moq muq mvim neek nig nihn nik nzat skee skiv skree skreek skrit skriv sneek snik tchee ven veen vic vin weesk wreek zez zis",
-	  "rules": "$s$v$c, %25$s$v$c$v$c, %15$s$A$c, %5$s$A$c$v$c, %30$s$v$p, %7$s$A$p"
+	  "rules": "$s$v$c %25$s$v$c$v$c %15$s$A$c %5$s$A$c$v$c %30$s$v$p %7$s$A$p"
 	},
 	"rats": {
 	  "A": "heek histh hisvit ikit itch kree kwee kweev kwik neek neekit risik skee skiv skree skreek skreelk skrit skriv skwee sneek sneetch snik snikit snitch tchee tchirik weesk wisth wreek",
@@ -484,7 +484,7 @@
 	  "e": "ad al am an ash az dal dan ded den dul dun ed fal fam fil fin gam gel gin gum id if il im in is ish iv jid kad kel kid kim kud lin mul mun nal nem nu nun sad sed sen sh sum ud ul um un va vam ved ven vun wen win zad zed",
 	  "A": "fi gi ka ju la ma mi mu sa si vi vu wi",
 	  "v": "a a e i i u",
-	  "rules": "$s$e$50e$80v, %50$s$e$A"
+	  "rules": "$s$e$50e$80v %50$s$e$A"
 	},
 	"sylph male": {
 	  "s": "A Ca Ce Ci Cu Da Ey Fa Fe Fi Fu Ga Ge Ha He Hel Hi Hu Huz I Ja Je La Li Lu Ma Mi Mu Ni Sa Se Si Su U Va Vu Wa Wu Zu",
@@ -495,26 +495,25 @@
 	  "s": "Bek Bel Buk Caw Chak Chuk Chuz Gaak Kar Kra Kraa Kraak Kaak Kra Krap Kre Oun Pez Pin Pra Pree Pri Pu Qack Qre Qro Qru Rok Tai Tchi Xai Xeep",
 	  "A": "Ah Ba E Ju O Pi Po Qu Ra Ru Ta Xe",
 	  "e": "ah caw cha ch chor chu ck croa gaak gh igh ir je ka kar kee koa kra kraa kraak kaak la lee meck mu nan ne nir pee pu qek qoon qul quz re rek rel ta taa tee toa tiu ugh un vaak ye yeck yi yoi zack ze zo zul",
-	  "rules": "$s$80e$25e, %10$s-$s, %10$A$e$15e, %4$A-$s$30e"
+	  "rules": "$s$80e$25e %10$s$s %10$A$e$15e %4$A$s$30e"
 	},
 	"tengu male": {
 	  "s": "Aah Baa Bek Beek Beel Bel Biuk Buk Caw Chak Chiuk Chuk Chiuz Chuz Een Gaa Gaak Joo Jiu Kaar Kar Kra Kraa Kraak Kaak Kra Krap Kre Oun Ooah Pez Pee Pin Pra Pree Pri Piu Poo Pu Qack Qra Qraa Qre Qree Qriu Rok Tai Tchi Xai Xeep",
-	  "A": "Ah Ba Ju O Pi Po Qu Ra Ru Ta Xe",
 	  "e": "ah caw cha ch chor chu ck croa gaa gaak gh igh ir je ka kar kee koa kra kraa kraah kraak kaak la lee meck mu nan ne nir pee pu qek qoon qul quz re rek rel ta taa tee toa tiu ugh un vaak ye yeck yi yoi zack ze zee zo zul",
-	  "rules": "$s$80e$25e, %20$s-$s"
+	  "rules": "$s$80e$25e %20$s$s"
 	},
 	"toads": {
 	  "A": "boag bolg brolg gaarlb goag goalb golg goln graal roalb roalg rolg rolv slaag slaan slaar slaav sloag slorg slorv soag vaarg vlaar vlaaz voag volg vraag vraal vrog vrol",
-	  "rules":"$A, %50$A$A, %10$A$A$A"
+	  "rules":"$A %50$A$A %10$A$A$A"
 	} ,
 	"turtles": {
 	  "A": "haash heem ihxaan inixh kahxtu kam kiul mahz mierz mursh reehm scux shai shar sheel siul skeen slaxas strai suliz sxur taish tur tzenx tzesh tzuhan tzur xeem xhan xurelz",
-	  "rules":"$A, %50$A$A, %10$A$A$A"
+	  "rules":"$A %50$A$A %10$A$A$A"
 	},
 	"corporations":{
-		"s":"_Applied _Best _Synthetic _Industrial _Futura _Destiny _Wellness _Military _Defense", 
-		"m":"_Electronics _Genomics _Genetics _Nanotech _Robotics _Cognitive _Neural _Infinity _Psi",
-		"e":"_Corporation _Compact _Conglomerate _Company _Incorporated _Synthetics _Synthetica _Genoma _Technica _Armor _Arms _Weapons" ,
-		"rules":"%10$s$s$e, $s$m"
+		"s":"Applied Best Synthetic Industrial Futura Destiny Wellness Military Defense", 
+		"m":"Electronics Genomics Genetics Nanotech Robotics Cognitive Neural Infinity Psi",
+		"e":"Corporation Compact Conglomerate Company Incorporated Synthetics Synthetica Genoma Technica Armor Arms Weapons" ,
+		"rules":"%10$s$s$e $s$m"
 	 }
   }

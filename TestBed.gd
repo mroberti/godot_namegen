@@ -16,85 +16,88 @@ func _ready():
 	randomize()
 
 	var temp_nugget = load_json("res://assets/data/names/creatures.json")
-	print(RNGTools.randi_range(-10,10));
-	var bag := RNGTools.WeightedBag.new()
-	bag.weights = {
-		A = 1,
-		B = 2,
-		C = 3
-	}
-	# "rules": "Ap %10P-B %50CD %50PD %50Cp %25E"
-	print(RNGTools.pick_weighted(bag))
-	var species = "corporations"
+	# print(RNGTools.randi_range(-10,10));
+	# var bag := RNGTools.WeightedBag.new()
+	# bag.weights = {
+	# 	A = 1,
+	# 	B = 2,
+	# 	C = 3
+	# }
+	# # "rules": "Ap %10P-B %50CD %50PD %50Cp %25E"
+	# print(RNGTools.pick_weighted(bag))
+	var species = "tengu male"
 
 	for n in 1:
 		print(n)
 		shuffle_stuff(temp_nugget[str(species)])
 
 func shuffle_stuff(temp_nugget):
+	print("tempnugget: "+str(temp_nugget))
+	for key in temp_nugget:
+		if(key!="rules"):
+			print("Key: "+key)
+			#print(temp_nugget[key])
+			temp_nugget[key] = temp_nugget[key].split(" ") as Array
+			print(temp_nugget[key])
+
 	var result = ""
-	var the_rules := temp_nugget.rules.split(", ") as Array
-	var rule = ""
+	var the_rules := temp_nugget.rules.split(" ") as Array
 	print(temp_nugget)
 	print(the_rules)
-	# "$A$p, %10$P-$B, %50$C$D, %50$P$D, %50$C$p, %25$E"
-	# Choose a rule randomly
-	# If there's a percentage at the front, roll against it
-	# if roll succeeds, use that rule, otherwise, roll again
-	randomize()
-	the_rules = ["$A$p", "%10$P-$B", "%50$C$D", "%50$P$D", "$50$C$p", "%25$E"]
+	#Sort the array, from the last towards the first will be 
+	# our percentile rules with the "%" symbol. Cycle through
+	# those to see if they pass the percentile check. If so, 
+	# Generate the name according to that particular rule. 
 	the_rules.sort()
 	print(the_rules) # Prints [[4, Tomato], [5, Potato], [9, Rice]].
-	while [true]:
-		rule = RNGTools.pick(the_rules)
-		print("First char:"+rule[0])
-		print("Rule:"+rule)
-		if(rule[0]=="$"):
-			# Erase the $ if it's the first char, otherwise splitting string into array won't work. 
-			rule.erase(0, 1)
-			break
-		elif(rule[0]=="%"):
-			print(rule[0])
-			var name_chunks := rule.split("$") as Array
-			# Erase the $ if it's the first char, otherwise splitting string into array won't work. 
-			name_chunks[0].erase(0, 1)
-			if(percent(int(name_chunks[0]))):
-				rule.erase(0, rule.find ( "$", 1 ))
-				rule.erase(0, 1)
-				# print("Rule:"+rule)
+	for i in range(the_rules.size() - 1, - 1, -1):
+		print(the_rules[i])
+		if(the_rules[i].contains("%")):
+			the_rules[i].erase(0, 1)
+			var parsedString = the_rules[i].split("$") as Array
+			if(percent(int(parsedString[0]))):
+				for j in range(parsedString.size()):
+					if(j!=0):
+						result = result + RNGTools.pick(temp_nugget[""+parsedString[j]+""])+" "
 				break
+			else:
+				the_rules.remove_at(i)
+		else:
+			print("remaining rules: "+str(the_rules))
+			var theRule = RNGTools.pick(the_rules)
+			print("Picking a remaining non % rule: "+theRule)
+			var parsedString = theRule.split("$") as Array
+			print(parsedString)
+			for j in range(parsedString.size()):
+				print("j "+str(j))
+				if(parsedString[j] !=""):
+					if(has_letters_and_numbers(parsedString[j])):
+						print("Has numbers and letters")
+						# Expected format is $s$80e$25e, so the last
+						# letter is the key, but we need to do a percent
+						# check on that remaining number...
+						print("Pre parsing: "+parsedString[j])
+						var check = int(parsedString[j].erase(parsedString[j].length()-1, parsedString[j].length()))
+						var thekey = parsedString[j].erase(0, parsedString[j].length()-1)
+						print("Key "+thekey)
+						print("check "+str(check))
+						if(percent(check)):
+							result = result + RNGTools.pick(temp_nugget[""+thekey+""])+" "
+					else:
+						print("Has only letters")
+						print("parsedString[j] "+parsedString[j])
+						result = result + RNGTools.pick(temp_nugget[""+parsedString[j]+""])+" "
+					
 
-	# rule = rule.replace ( "$", "" )
+	print("Result: "+result)
 
-	# var key1 := rule.split("$") as Array
-	# for key in key1:
-	# 	if key[0].is_valid_int():
-	# 		# Quantity = int(Quantity)
-	# 		var mytestnumber = key.substr(0, key.length()-1)
-	# 		var name_part = key.substr(key.length()-1,key.length())
-	# 		if(percent(int(mytestnumber))):
-	# 			var the_array := temp_nugget[str(name_part)].split(" ") as Array
-	# 			result = result + RNGTools.pick(the_array)
-	# 	else:
-	# 		var suffix = ""
-	# 		# print("key "+key)
-	# 		if(key.length()>1):
-	# 			# print("key[0] "+key[0])
-	# 			var name_part := temp_nugget[str(key[0])].split(" ") as Array
-	# 			# print("key[1] "+key[1])
-	# 			var temp := key.split(str(key[0])) as Array
-	# 			# print("Array "+temp[1])
-	# 			result = result + (RNGTools.pick(name_part) + temp[1])
-	# 			# ^^ Add a dash to the end of the word
-	# 		else:
-	# 			var name_part := temp_nugget[str(key[0])].split(" ") as Array
-	# 			result = result + RNGTools.pick(name_part)
-	# result = result.replace ( "_", " " )
-	# print(result)
+
 
 func percent(passed_percentile):
+	print("Percent "+str(passed_percentile))
 	var result = false
 	var roll = RNGTools.randi_range(1,100)
+	print("Roll: "+str(roll))
 	if(roll <= passed_percentile):
 		result = true
 	return result
@@ -102,3 +105,20 @@ func percent(passed_percentile):
 func testingSnippets():
 	for i in 10:
 		print(i)
+
+func has_letters_and_numbers(your_string):
+	var regex = RegEx.new()
+	regex.compile("[0-9][0-9]+[a-zA-Z]")
+	if regex.search(str(your_string)):
+		return true
+	else:
+		return false
+
+func has_letters(your_string):
+	var regex = RegEx.new()
+	regex.compile("[a-zA-Z]")
+	if regex.search(str(your_string)):
+		return true
+	else:
+		return false
+

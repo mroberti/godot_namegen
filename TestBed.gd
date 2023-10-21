@@ -1,6 +1,6 @@
 extends Node2D
 # https://github.com/LukeMS/lua-namegen/blob/master/data/creatures.cfg
-
+var name_rules = load_json("res://assets/data/names/creatures.json")
 func load_json(filename):
 	var file = filename
 	var json_as_text = FileAccess.get_file_as_string(file)
@@ -14,82 +14,71 @@ func sort_ascending(a, b):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
+	make_name("tengu male")
+	make_name("tengu male")
 
-	var temp_nugget = load_json("res://assets/data/names/creatures.json")
-	# print(RNGTools.randi_range(-10,10));
-	# var bag := RNGTools.WeightedBag.new()
-	# bag.weights = {
-	# 	A = 1,
-	# 	B = 2,
-	# 	C = 3
-	# }
-	# # "rules": "Ap %10P-B %50CD %50PD %50Cp %25E"
-	# print(RNGTools.pick_weighted(bag))
-	var species = "tengu male"
-
-	for n in 1:
-		print(n)
-		shuffle_stuff(temp_nugget[str(species)])
-
-func shuffle_stuff(temp_nugget):
-	print("tempnugget: "+str(temp_nugget))
-	for key in temp_nugget:
+func make_name(the_name_type):
+	var tempSlap = name_rules
+	var name1 = random_name(tempSlap[str(the_name_type)])
+	$output_console.text = $output_console.text + (name1) + "\n"
+	name1 = name1.left(name1.length() - 1)
+	var location1 = random_name(tempSlap[str("map locations")])
+	#var location2 = random_name(tempSlap[str("map locations")])
+	print(name1+"'s "+location1)
+	$output_console.text = $output_console.text + (name1+"'s "+location1)+"\n"
+	
+func random_name(race1):
+	var race = race1
+	for key in race:
 		if(key!="rules"):
 			print("Key: "+key)
-			#print(temp_nugget[key])
-			temp_nugget[key] = temp_nugget[key].split(" ") as Array
-			print(temp_nugget[key])
+			print(race[key])
+			race[key] = race[key].split(" ") as Array
+			#print(race[key])
 
 	var result = ""
-	var the_rules := temp_nugget.rules.split(" ") as Array
-	print(temp_nugget)
-	print(the_rules)
-	#Sort the array, from the last towards the first will be 
-	# our percentile rules with the "%" symbol. Cycle through
-	# those to see if they pass the percentile check. If so, 
-	# Generate the name according to that particular rule. 
+	var the_rules := race.rules.split(" ") as Array
 	the_rules.sort()
 	print(the_rules) # Prints [[4, Tomato], [5, Potato], [9, Rice]].
 	for i in range(the_rules.size() - 1, - 1, -1):
-		print(the_rules[i])
+		#print(the_rules[i])
 		if(the_rules[i].contains("%")):
 			the_rules[i].erase(0, 1)
 			var parsedString = the_rules[i].split("$") as Array
 			if(percent(int(parsedString[0]))):
 				for j in range(parsedString.size()):
 					if(j!=0):
-						result = result + RNGTools.pick(temp_nugget[""+parsedString[j]+""])+" "
+						result = result + RNGTools.pick(race[""+parsedString[j]+""])+" "
 				break
 			else:
 				the_rules.remove_at(i)
 		else:
-			print("remaining rules: "+str(the_rules))
+			#print("remaining rules: "+str(the_rules))
 			var theRule = RNGTools.pick(the_rules)
-			print("Picking a remaining non % rule: "+theRule)
+			#print("Picking a remaining non % rule: "+theRule)
 			var parsedString = theRule.split("$") as Array
-			print(parsedString)
+			#print(parsedString)
 			for j in range(parsedString.size()):
-				print("j "+str(j))
+				#print("j "+str(j))
 				if(parsedString[j] !=""):
 					if(has_letters_and_numbers(parsedString[j])):
-						print("Has numbers and letters")
+						#print("Has numbers and letters")
 						# Expected format is $s$80e$25e, so the last
 						# letter is the key, but we need to do a percent
 						# check on that remaining number...
-						print("Pre parsing: "+parsedString[j])
+						#print("Pre parsing: "+parsedString[j])
 						var check = int(parsedString[j].erase(parsedString[j].length()-1, parsedString[j].length()))
 						var thekey = parsedString[j].erase(0, parsedString[j].length()-1)
-						print("Key "+thekey)
-						print("check "+str(check))
+						#print("Key "+thekey)
+						#print("check "+str(check))
 						if(percent(check)):
-							result = result + RNGTools.pick(temp_nugget[""+thekey+""])+" "
+							result = result + RNGTools.pick(race[""+thekey+""])+" "
 					else:
-						print("Has only letters")
-						print("parsedString[j] "+parsedString[j])
-						result = result + RNGTools.pick(temp_nugget[""+parsedString[j]+""])+" "
+						#print("Has only letters")
+						#print("parsedString[j] "+parsedString[j])
+						result = result + RNGTools.pick(race[""+parsedString[j]+""])+" "
 					
-
-	print("Result: "+result)
+	return result
 
 
 

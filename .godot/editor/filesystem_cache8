@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697051453
-default_env.tres::Environment::8556936936608123236::1696361763::0::1::::<><>::
+::res://::1697843346
+default_env.tres::Environment::8556936936608123236::1697843289::0::1::::<><>::
 icon.png::CompressedTexture2D::1437285490614778581::1675105460::1696291373::1::::<><>::
 README.md::TextFile::-1::1675275521::0::1::::<><>::
-TestBed.gd::GDScript::-1::1696361759::0::1::::<>Node2D<>::
-TestBed.tscn::PackedScene::1173350686389250394::1696361763::0::1::::<><>::res://TestBed.gd
-::res://addons/::1696291233
+TestBed.gd::GDScript::-1::1697667387::0::1::::<>Node2D<>::
+TestBed.tscn::PackedScene::1173350686389250394::1697843074::0::1::::<><>::res://TestBed.gd
+::res://addons/::1697843306
 ::res://addons/rngtools/::1696292080
 LICENSE.md::TextFile::-1::1675105460::0::1::::<><>::
 RNGTools.gd::GDScript::-1::1696292080::0::1::::RNGTools<>Object<>::
@@ -14,7 +14,7 @@ RNGTools.gd::GDScript::-1::1696292080::0::1::::RNGTools<>Object<>::
 dnd_monsters.json::JSON::-1::1676483445::0::1::::<><>::
 spells.json::JSON::-1::1676483445::0::1::::<><>::
 websitesandblogs.json::JSON::-1::1676483445::0::1::::<><>::
-::res://assets/data/names/::1696360495
+::res://assets/data/names/::1697069667
 corporations.json::JSON::-1::1676483445::0::1::::<><>::
-creatures.json::JSON::-1::1696360495::0::1::::<><>::
+creatures.json::JSON::-1::1697667461::0::1::::<><>::
 empires.json::JSON::-1::1677794728::0::1::::<><>::

@@ -1,0 +1,5 @@
+res://default_env.tres
+res://TestBed.tscn
+res://assets/data/names/creatures.json
+res://TestBed.gd
+res://addons/rngtools/RNGTools.gd

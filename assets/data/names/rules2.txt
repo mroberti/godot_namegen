@@ -6,8 +6,8 @@
 //   s           syllablesStart      parser_data["start"]
 //   m           syllablesMiddle     parser_data["middle"]
 //   e           syllablesEnd        parser_data["end"]
-//   P           syllablesPre        parser_data["pre"]
-//   p           syllablesPost       parser_data["post"]
+//   p           syllablesPre        parser_data["pre"]
+//   P           syllablesPost       parser_data["post"]
 //   v           phonemesVocals      parser_data["vocals"]
 //   c           phonemesConsonants  parser_data["consonants"]
 //   A           customGroupA        parser_data["cga"]
@@ -329,7 +329,7 @@ name "aasimar male" {
     customGroupD = "itian tin nan wier ran amin dril krin rant ral gan"
     customGroupE = "Aritian, Beltin, Cernan, Cronwier, Eran, Ilamin, Maudril, Okrin, Parant, Tural, Wyran, Zaigan"
 
-    rules = "$A$p, %10$P-$B, %50$C$D, %50$P$D, %50$C$p, %25$E"
+    rules = "$A$p, %10$p-$B, %50$C$D, %50$p$D, %50$C$P, %25$E"
 }
 
 name "aasimar female" {

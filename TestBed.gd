@@ -11,11 +11,17 @@ var parse_dict = {
 "c":"phonemesConsonants",
 "A":"customGroupA",
 "B":"customGroupB",
+"C":"customGroupC",
+"D":"customGroupD",
+"E":"customGroupE",
+"F":"customGroupF",
+"G":"customGroupG",
+"H":"customGroupH",
 "N":"customGroupN",
 "O":"customGroupO"
 }
 
-var species = "giant male"
+var species = "dwarf male 2"
 
 var main_rules = {}
 	
@@ -31,11 +37,6 @@ func sort_ascending(a, b):
 	return false
 	
 func _ready():
-	# Assuming you have already loaded the provided file data into a variable named "rulesText"
-
-	# Initialize an empty string to store the filtered data
-	var filtered_data = ""
-
 	# Split the loaded data into lines
 	var lines = rulesText.split("\n")
 	var parentNode = ""
@@ -58,30 +59,32 @@ func _ready():
 				value = value.replace(",", "")
 				# #print("Value: "+value)
 				main_rules[parentNode][""+key+""] = value.split(" ") as Array
-			# Append the line to the filtered data
-			filtered_data += line + "\n"
 	
 	for i in range(0,100):
-		var pickedRule
-		while true:
-			pickedRule = RNGTools.pick(main_rules[""+species+""]["rules"])
-			print("rule: "+pickedRule)
-			if pickedRule[0]=="%":
-				# OK we have a percentile rule, let's trim up
-				# the string and what not to pass to percent
-				var tempChunks = pickedRule.split("$") as Array
-				var percent = tempChunks[0].right(tempChunks[0].length()-1)
-				#print("Roll D100 "+percent)
-				#print(percent(percent))
-				if(percent(percent)):
-					#print("WIIIIIIIIINNNNNNNNNNN!!!")
-					process_rule(pickedRule)
-					break
-			else:
-				#print("bort!")
-				process_rule(pickedRule)
-				break
+		add_output(random_name("aasimar male")+" "+random_name("halfling surname"))
 
+func random_name(theSpecies):
+	var result = ""
+	var pickedRule
+	while true:
+		pickedRule = RNGTools.pick(main_rules[""+theSpecies+""]["rules"])
+		#print("rule: "+pickedRule)
+		if pickedRule[0]=="%":
+			# OK we have a percentile rule, let's trim up
+			# the string and what not to pass to percent
+			var tempChunks = pickedRule.split("$") as Array
+			var percent = tempChunks[0].right(tempChunks[0].length()-1)
+			#print("Roll D100 "+percent)
+			#print(percent(percent))
+			if(percent(percent)):
+				#print("WIIIIIIIIINNNNNNNNNNN!!!")
+				result = process_rule(pickedRule,theSpecies)
+				break
+		else:
+			#print("bort!")
+			result = process_rule(pickedRule,theSpecies)
+			break
+	return result
 
 func percent(passed_percentile):
 	passed_percentile = int(passed_percentile)
@@ -91,21 +94,55 @@ func percent(passed_percentile):
 	#print("Roll: "+str(roll))
 	if(roll <= passed_percentile):
 		result = true
+		print("Passed")
 	return result
 
-func process_rule(the_rule):
+func process_rule(the_rule, theSpecies):
 	var result = ""
-	print("Received rule: "+the_rule)
+	#print("Received rule: "+the_rule)
 	var rule_chunks = the_rule.split("$")
 	for i in range(0,rule_chunks.size()):
 		if(i>0):
-			# #print("ah? "+rule_chunks[i])
-			# #print(parse_dict[""+rule_chunks[i]+""])
-			result = result + RNGTools.pick(main_rules[""+species+""][""+parse_dict[""+rule_chunks[i]+""]+""])
-			# #print(main_rules["dwarf male"][""+parse_dict[chunk]+""])
-	#print("Result: "+result)
-	add_output(result)
+			#print(rule_chunks[i])
+			if(rule_chunks[i].length()==1):
+				result = result + RNGTools.pick(main_rules[""+theSpecies+""][""+parse_dict[""+rule_chunks[i]+""]+""])
+			elif(rule_chunks[i][0].is_valid_int()):
+				#print("Hey it's a number!")
+				var extracted_percentile = ""
+				var extracted_rule_chunk = ""
+				var suffix = ""
+				for letter in rule_chunks[i]:
+					if(letter.is_valid_int()):
+						extracted_percentile += letter
+					else:
+						if(has_letters(letter)):
+							extracted_rule_chunk += letter
+						else:
+							suffix+=letter 
+				if(percent(extracted_percentile)):
+					result = result + RNGTools.pick(main_rules[""+theSpecies+""][""+parse_dict[""+extracted_rule_chunk+""]+""])
+					result = result + suffix
+				#print("Extracted percentile: "+extracted_percentile)
+			else:
+				var extracted_rule_chunk = ""
+				var suffix = ""
+				for letter in rule_chunks[i]:
+					if(has_letters(letter)):
+						result += RNGTools.pick(main_rules[""+theSpecies+""][""+parse_dict[""+letter+""]+""])
+					else:
+						suffix+=letter 
+				result = result + suffix
 	return result
 
 func add_output(theString):
 	$output_console.text = $output_console.text + theString +"\n"
+
+func has_letters(your_string):
+	var regex = RegEx.new()
+	regex.compile("[a-zA-Z]+")
+	if regex.search(str(your_string)):
+		print(true)
+		return true
+	else:
+		print(false)
+		return false

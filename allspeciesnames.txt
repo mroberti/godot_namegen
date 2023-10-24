@@ -1,0 +1,94 @@
+dwarf male
+dwarf female
+dwarf male 2
+dwarf female 2
+dwarf surname
+elf female
+elf male
+elf male 2
+elf female 2
+gnome female
+gnome male
+gnome surname
+halfling female
+halfling male
+halfling male 2
+halfling female 2
+halfling surname
+human male
+human female
+human surname
+aasimar male
+aasimar female
+catfolk male
+catfolk female
+drow male
+drow female
+fetchling male
+fetchling female
+goblin male
+goblin female
+hobgoblin male
+hobgoblin female
+ifrit male
+ifrit female
+kobold male
+kobold female
+orc female
+orc male
+orc male 2
+orc female 2
+orc surname
+oread male
+oread female
+ratfolk male
+ratfolk female
+sylph male
+sylph female
+tengu male
+tengu female
+ogre male
+ogre female
+giant male
+giant female
+sprite male 1
+sprite male 2
+sprite female 1
+sprite female 2
+half-demon male
+half-demon female
+dragon male
+dragon female
+infernal 1
+infernal 2
+infernal 3
+apes
+rats
+squirrels
+dogs
+hyenas
+cats
+great cats
+horses
+pigs
+crustaceans
+spiders
+insects
+octopus
+squid
+slugs
+bird cries
+bird caws
+bird croaks
+bird tweets
+bird chirps
+bird hoots
+fish
+sharks
+eels
+eels
+turtles
+lizards
+snakes
+frogs
+toads
